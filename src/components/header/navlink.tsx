@@ -4,13 +4,13 @@ const navLinks = [
     { link: "/", name: "Home" },
     { link: "/about", name: "About Us" },
     { link: "/features", name: "Features" },
-    { link: "/contact", name: "Contact Us" },
+    { link: "/countries", name: "Countries" },
 ];
 const footerLink = [
     { link: "/", name: "Home" },
     { link: "/about", name: "About Us" },
     { link: "/features", name: "Features" },
-    { link: "/contact", name: "Contact Us" },
+    { link: "/countries", name: "Countries" },
 ]
 const contacts = [
     {

@@ -5,6 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { navLinks } from "./navlink";
+import { Button } from "../ui/button";
+import { ArrowRight } from "lucide-react";
 
 
 export type LinkItem = {
@@ -52,6 +54,14 @@ const TopHeader = () => {
 
                 </nav>
 
+                <div className="flex gap-4 items-center">
+                    <Button className="rounded-xl" variant={'ghost'}>
+                        Join Us
+                    </Button>
+                    <Button className="rounded-xl" variant={'outline'} >
+                        Contact Us
+                    </Button>
+                </div>
             </div>
         </header>
     );

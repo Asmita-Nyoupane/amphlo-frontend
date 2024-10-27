@@ -11,11 +11,15 @@ const BottomFooter = () => {
             <p className='mb-4 md:mb-0'>
                 &copy; {new Date().getFullYear()}
                 <span className="hover:text-secondaryColor cursor-pointer ml-1">
-                    ARIBT
+                    Ampholo
                 </span>
                 . All rights reserved.
             </p>
-
+            <p>Powered By :
+                <a href="https://www.e-aribt.com/" target="_blank" rel="noopener noreferrer" className="ml-1">
+                    ARIBT
+                </a>
+            </p>
             {/* Terms and Privacy */}
             <div className='flex flex-wrap items-center gap-4 md:gap-8 cursor-pointer mb-4 md:mb-0 '>
                 <Link href="/terms" className="hover:text-primaryColor transition-colors duration-200">
