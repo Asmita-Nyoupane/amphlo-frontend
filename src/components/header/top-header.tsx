@@ -37,7 +37,7 @@ const TopHeader = () => {
                 </Link>
 
                 {/* Navigation Links */}
-                <nav className="flex items-center justify-end gap-6">
+                <nav className="flex items-center justify-end gap-8">
                     {navLinks.map((link: LinkItem, i) => (
                         <Link
                             key={i}
@@ -54,7 +54,7 @@ const TopHeader = () => {
 
                 </nav>
 
-                <div className="flex gap-4 items-center">
+                <div className="flex gap-6 items-center">
                     <Button className="rounded-xl" variant={'ghost'}>
                         Join Us
                     </Button>

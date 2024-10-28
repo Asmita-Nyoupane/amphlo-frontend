@@ -15,7 +15,7 @@ const BottomFooter = () => {
                 </span>
                 . All rights reserved.
             </p>
-            <p>Powered By :
+            <p className='mb-4 md:mb-0'>Powered By :
                 <a href="https://www.e-aribt.com/" target="_blank" rel="noopener noreferrer" className="ml-1">
                     ARIBT
                 </a>

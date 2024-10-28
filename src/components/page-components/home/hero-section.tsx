@@ -6,9 +6,9 @@ import React from 'react'
 const HeroSection = () => {
     return (
 
-        <div className='flex flex-col md:flex-row gap-10 justify-between items-center h-[calc(100vh-4.5rem)] '>
-            <section className=' w-full md:w-[50%] flex flex-col gap-5 '>
-                <h2 className='text-7xl font-extrabold text-mainColor tracking-wide'>Welcome to Amphlo</h2>
+        <div className='flex flex-col lg:flex-row gap-10 justify-between items-center  mt-10  h-[calc(100vh-6.5rem)] '>
+            <section className=' w-full lg:w-[50%] flex flex-col gap-5  '>
+                <h2 className=' text-4xl  font-bold lg:text-7xl md:font-extrabold text-mainColor tracking-wide'>Welcome to Amphlo</h2>
                 <p className=' w-11/12 leading-8  '>Streamline your abroad study processes with AMPHLO, the CRM designed for efficiency and customization.</p>
 
                 <div className='flex gap-5 items-center'>
@@ -22,13 +22,13 @@ const HeroSection = () => {
                     </Button>
                 </div>
             </section>
-            <section className='flex-1 mt-10'>
+            <section className='flex-1   w-full l'>
                 <Image
                     src={'/assets/hero-image.jpeg'}
                     alt='hero-image'
                     height={500}
                     width={500}
-                    className='object-cover aspect-square rounded-xl shadow-lg' />
+                    className='object-cover   h-[300px] lg:h-full  w-full lg:aspect-square rounded-xl shadow-lg' />
             </section>
 
         </div>

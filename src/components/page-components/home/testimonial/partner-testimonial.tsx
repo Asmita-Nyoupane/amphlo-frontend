@@ -1,6 +1,7 @@
+"use client"
 import React from 'react'
 import { testimonials } from './testimonial'
-import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card'
+import { Card, CardContent, CardDescription, CardFooter, CardHeader } from '@/components/ui/card'
 import Star from './star'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import 'slick-carousel/slick/slick.css';
@@ -55,34 +56,39 @@ const PartnerTestimonial = () => {
                 <p className='text-muted-foreground'> {testimonialLength} Reviews</p>
             </div>
             <div className="slider-container  flex flex-col gap-6">
-                {/* <Slider {...settings} className=''> */}
+                <Slider {...settings} className=''>
 
-                {
-                    testimonials.map((testimonial) => (
-                        <Card key={testimonial.name} className='px-4'>
-                            <CardHeader className='flex justify-between flex-row '>
-                                <Star stars={testimonial.rating} />
-                                <p className='text-muted-foreground'>{testimonial.date}</p>
-                            </CardHeader>
-                            <CardContent>
-                                {testimonial.testimonial}
-                            </CardContent>
-                            <CardFooter>
-                                <div className="flex items-start space-x-4">
-                                    <Avatar className="size-12">
-                                        <AvatarImage className='object-cover object-top' src={testimonial.image} alt={testimonial.name} />
-                                        <AvatarFallback>{testimonial.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
-                                    </Avatar>
-                                    <div className="space-y-1">
-                                        <h3 className="font-semibold">{testimonial.name}</h3>
-                                        <p className="text-sm text-muted-foreground">{testimonial.position}</p>
-                                    </div>
-                                </div>
-                            </CardFooter>
-                        </Card>
-                    ))
-                }
-                {/* </Slider> */}
+                    {
+                        testimonials.map((testimonial) => (
+                            <div key={testimonial.name} className=''>
+
+                                <Card className='bg-gray-50 md:h-[310px]   lg:h-[280px] mx-4'>
+                                    <CardHeader className='flex justify-between flex-row  items-center'>
+                                        <Star stars={testimonial.rating} />
+                                        <p className='text-muted-foreground'>{testimonial.date}</p>
+                                    </CardHeader>
+                                    <CardContent>
+                                        <CardDescription>
+                                            {testimonial.testimonial}
+                                        </CardDescription>
+                                    </CardContent>
+                                    <CardFooter>
+                                        <div className="flex items-start space-x-4">
+                                            <Avatar className="size-12">
+                                                <AvatarImage className='object-cover object-top' src={testimonial.image} alt={testimonial.name} />
+                                                <AvatarFallback>{testimonial.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
+                                            </Avatar>
+                                            <div className="space-y-1">
+                                                <h3 className="font-semibold">{testimonial.name}</h3>
+                                                <p className="text-sm text-muted-foreground">{testimonial.position}</p>
+                                            </div>
+                                        </div>
+                                    </CardFooter>
+                                </Card>
+                            </div>
+                        ))
+                    }
+                </Slider>
             </div>
         </div>
     )

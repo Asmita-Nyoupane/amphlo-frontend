@@ -7,7 +7,7 @@ import WhyChoose from "@/components/page-components/home/why-choose";
 
 export default function Home() {
   return (
-    <div className=" flex flex-col    gap-16">
+    <div className=" flex flex-col   gap-16 ">
       <div className="container mx-auto flex flex-col gap-16" >
 
         <HeroSection />
