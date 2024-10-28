@@ -22,7 +22,7 @@ const HeroSection = () => {
                     </Button>
                 </div>
             </section>
-            <section className='flex-1   w-full l'>
+            <section className='flex-1   w-full '>
                 <Image
                     src={'/assets/hero-image.jpeg'}
                     alt='hero-image'

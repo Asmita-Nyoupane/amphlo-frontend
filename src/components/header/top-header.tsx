@@ -7,11 +7,23 @@ import { usePathname } from "next/navigation";
 import { navLinks } from "./navlink";
 import { Button } from "../ui/button";
 import { ArrowRight } from "lucide-react";
+import {
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuItem,
+    DropdownMenuLabel,
+    DropdownMenuSeparator,
+    DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 
 
 export type LinkItem = {
     name: string;
     link: string;
+    sublinks?: {
+        name: string;
+        link: string;
+    }[]
 };
 
 const TopHeader = () => {
@@ -39,27 +51,53 @@ const TopHeader = () => {
                 {/* Navigation Links */}
                 <nav className="flex items-center justify-end gap-8">
                     {navLinks.map((link: LinkItem, i) => (
-                        <Link
-                            key={i}
-                            href={link.link}
-                            className={`font-medium lg:text-md transition-all duration-300 ease-in-out transform hover:scale-110 ${path === link.link
-                                ? "text-mainColor font-semibold"
-                                : " hover:text-mainColor"
-                                }`}
-                        >
-                            {link.name}
-                        </Link>
+                        <div key={i}>
+                            {link.sublinks ? (
+                                <DropdownMenu>
+                                    <DropdownMenuTrigger asChild className="outline-none focus:ring-0">
+                                        <Link
+                                            href={link.link}
+                                            className={`font-medium lg:text-md transition-all duration-300 ease-in-out transform hover:scale-110 ${path === link.link ? "text-mainColor font-semibold" : "hover:text-mainColor"
+                                                }`}
+                                        >
+                                            {link.name}
+                                        </Link>
+                                    </DropdownMenuTrigger>
+                                    <DropdownMenuContent className="bg-white shadow-md">
+                                        {link.sublinks.map((sublink, j) => (
+                                            <DropdownMenuItem asChild key={j}>
+                                                <Link href={sublink.link} className="text-gray-700 hover:text-mainColor px-4 py-2">
+                                                    {sublink.name}
+                                                </Link>
+                                            </DropdownMenuItem>
+                                        ))}
+                                    </DropdownMenuContent>
+                                </DropdownMenu>
+                            ) : (
+                                <Link
+                                    href={link.link}
+                                    className={`font-medium lg:text-md transition-all duration-300 ease-in-out transform hover:scale-110 ${path === link.link ? "text-mainColor font-semibold" : "hover:text-mainColor"
+                                        }`}
+                                >
+                                    {link.name}
+                                </Link>
+                            )}
+                        </div>
                     ))}
-
-
                 </nav>
 
+
                 <div className="flex gap-6 items-center">
-                    <Button className="rounded-xl" variant={'ghost'}>
-                        Join Us
+
+                    <Button className="rounded-xl" variant={'ghost'} asChild>
+                        <Link href='/' >
+                            Join Us
+                        </Link>
                     </Button>
-                    <Button className="rounded-xl" variant={'outline'} >
-                        Contact Us
+                    <Button className="rounded-xl" variant={'outline'} asChild >
+                        <Link className="" href={'/contact-us'}>
+                            Contact Us
+                        </Link>
                     </Button>
                 </div>
             </div>

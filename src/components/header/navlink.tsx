@@ -2,15 +2,29 @@ import { Mail, MapPin, Phone } from "lucide-react";
 
 const navLinks = [
     { link: "/", name: "Home" },
-    { link: "/about", name: "About Us" },
+    {
+        link: "/about", name: "About Us",
+        sublinks: [
+            { link: "/for-universities", name: "For Universities" },
+            { link: "/for-partners", name: "For Partners " },
+        ]
+    },
     { link: "/features", name: "Features" },
-    { link: "/countries", name: "Countries" },
+    {
+        link: "/countries", name: "Countries",
+        sublinks: [
+            { link: "/study-in-usa", name: "Study In USA" },
+            { link: "/study-in-australia", name: "Study In Australia" },
+        ]
+    },
 ];
 const footerLink = [
     { link: "/", name: "Home" },
-    { link: "/about", name: "About Us" },
+    // { link: "/about", name: "About Us" },
     { link: "/features", name: "Features" },
     { link: "/countries", name: "Countries" },
+    { link: "/for-universities", name: "For Universities" },
+    { link: "/for-partners", name: "For Partners " },
 ]
 const contacts = [
     {
@@ -19,12 +33,12 @@ const contacts = [
     },
     {
         icon: Mail,
-        info: "info@ampholo.com",
+        info: "info@amphlo.com",
     },
 
     {
         icon: MapPin,
-        info: "Tilotama-2, Rupandehi",
+        info: "Yogikoti, Rupandehi",
     },
 ];
 const socialMedia = [

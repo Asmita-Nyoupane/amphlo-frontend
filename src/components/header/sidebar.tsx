@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
-import { navLinks } from "./navlink";
+import { footerLink, navLinks } from "./navlink";
 import { LinkItem } from "./top-header";
 import { Button } from "../ui/button";
 
@@ -36,14 +36,14 @@ const SideHeader = () => {
                         className="h-[40px] w-auto object-contain"
                     />
                 </Link>
-                <button onClick={toggleNavBar} className="text-2xl text-primaryColor ">
+                <button onClick={toggleNavBar} className="text-2xl text-mainColor ">
                     <Menu />
                 </button>
             </div>
 
             {/* Sidebar for Mobile View */}
             <div
-                className={`md:hidden fixed top-0 left-0 w-[60%] max-w-sm h-full bg-white text-gray-800 z-50 flex flex-col items-start p-6 transition-transform transform ${isOpen ? "translate-x-0" : "-translate-x-full"
+                className={`md:hidden fixed top-0 left-0 w-[40%] max-w-sm h-full bg-white text-gray-800 z-50 flex flex-col items-start p-6 transition-transform transform ${isOpen ? "translate-x-0" : "-translate-x-full"
                     } duration-300 ease-in-out`}
             >
                 {/* Sidebar Top Section */}
@@ -59,30 +59,34 @@ const SideHeader = () => {
                             className="h-[40px] w-auto object-contain"
                         />
                     </Link>
-                    <button onClick={closeNavBar} className="text-primaryColor hover:bg-gray-100 p-2 rounded-full">
+                    <button onClick={closeNavBar} className="text-mainColor hover:bg-gray-100 p-2 rounded-full">
                         <X size={20} />
                     </button>
                 </div>
 
                 {/* Navigation Links */}
                 <nav className="w-full flex flex-col gap-3 mt-3">
-                    {navLinks.map((link: LinkItem, i) => (
+                    {footerLink.map((link: LinkItem, i) => (
                         <Link
                             key={i}
                             href={link.link}
                             onClick={closeNavBar}
-                            className={`font-medium hover:text-primaryColor transition-all duration-300 ease-in-out ${path === link.link ? "text-primaryColor font-semibold" : ""
+                            className={`font-medium hover:text-mainColor transition-all duration-300 ease-in-out ${path === link.link ? "text-mainColor font-semibold" : ""
                                 }`}
                         >
                             {link.name}
                         </Link>
                     ))}
                     <div className="flex gap-3 flex-col justify-start">
-                        <Button className="rounded-xl min-w-fit" variant={'outline'}>
-                            Join Us
+                        <Button className="rounded-xl  w-fit min-w-32" variant={'secondary'} asChild>
+                            <Link href='/' >
+                                Join Us
+                            </Link>
                         </Button>
-                        <Button className="rounded-xl min-w-fit" variant={'outline'} >
-                            Contact Us
+                        <Button className="rounded-xl w-fit min-w-32 " variant={'outline'} asChild >
+                            <Link className="" href={'/contact-us'}>
+                                Contact Us
+                            </Link>
                         </Button>
                     </div>
                 </nav>

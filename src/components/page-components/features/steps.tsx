@@ -22,7 +22,7 @@ const crmSetupSteps = [
 
 const Steps = () => {
     return (
-        <div className="flex flex-col gap-8 items-center justify-center p-8">
+        <div className="flex flex-col gap-8 items-center justify-center ">
             <h2 className="text-4xl font-bold text-mainColor">How to Leverage AMPHLO</h2>
             <p className="text-muted-foreground text-center ">
                 A step-by-step guide to maximizing the potential of AMPHLO for your consultancy.
@@ -31,10 +31,10 @@ const Steps = () => {
                 {crmSetupSteps.map(({ step, title, description }) => (
                     <div key={title} className='w-[300px] flex flex-col gap-3' >
                         <div className='flex gap-4 items-center'>
-                            <p className='bg-mainColor size-10 p-2 flex items-center justify-center rounded-full shadow-md text-center text-white'>
+                            <p className='bg-mainColor text-white w-10 h-10 flex items-center justify-center rounded-full font-bold text-lg shadow-md'>
                                 {step}
                             </p>
-                            <div className='bg-mainColor w-full h-[0.5px]'></div>
+                            {step !== 3 && <div className="flex-grow h-px bg-mainColor"></div>}
                         </div>
                         <h2 className='text-xl font-semibold'>{title}</h2>
                         <p>{description}</p>

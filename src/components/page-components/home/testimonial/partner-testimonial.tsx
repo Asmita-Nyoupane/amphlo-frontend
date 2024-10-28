@@ -53,7 +53,7 @@ const PartnerTestimonial = () => {
             <div className='flex flex-col gap-2'>
 
                 <h2 className='text-4xl font-bold text-mainColor'>Partner Testimonials</h2>
-                <p className='text-muted-foreground'> {testimonialLength} Reviews</p>
+                <p className='font-medium'> {testimonialLength} Reviews</p>
             </div>
             <div className="slider-container  flex flex-col gap-6">
                 <Slider {...settings} className=''>

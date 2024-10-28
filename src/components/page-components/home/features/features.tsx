@@ -32,7 +32,7 @@ const Features = () => {
                             <CardTitle className="text-xl font-semibold text-center">{feature.title}</CardTitle>
                         </CardHeader>
                         <CardContent>
-                            <CardDescription className="text-muted-foreground text-center">
+                            <CardDescription className="text-muted-foreground text-base text-center">
                                 {feature.description}
                             </CardDescription>
                         </CardContent>

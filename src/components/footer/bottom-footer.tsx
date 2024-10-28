@@ -11,7 +11,7 @@ const BottomFooter = () => {
             <p className='mb-4 md:mb-0'>
                 &copy; {new Date().getFullYear()}
                 <span className="hover:text-secondaryColor cursor-pointer ml-1">
-                    Ampholo
+                    Amphlo
                 </span>
                 . All rights reserved.
             </p>
