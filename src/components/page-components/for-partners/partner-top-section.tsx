@@ -14,11 +14,10 @@ const PartnerTopsection = () => {
                 <p className='text-lg text-muted-foreground leading-8 max-w-2xl'>
                     At Ampholo-CRM, we understand the complexities involved in the study abroad journey. Our mission is to simplify and enhance this experience for students, educational institutions, and partner organizations. By partnering with us, you can play a pivotal role in transforming the study abroad process into a seamless, efficient, and enriching experience.
                 </p>
-                <Button className='w-fit' asChild>
-                    <Link href={'/contact-us'}>
-                        Connect With Us
+                <Button size="lg" className="rounded-full sm:w-fit " asChild>
+                    <Link href="/features">
+                        Explore Features
                     </Link>
-
                 </Button>
             </section>
             <section className='flex-1 '>
@@ -27,7 +26,7 @@ const PartnerTopsection = () => {
                     alt='hero-image'
                     height={500}
                     width={500}
-                    className='object-cover  aspect-square rounded-xl shadow-lg' />
+                    className='object-cover   aspect-video lg:aspect-square rounded-xl shadow-lg' />
             </section>
         </div>
     )

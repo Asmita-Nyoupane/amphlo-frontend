@@ -7,7 +7,7 @@ import React from 'react'
 const HeroSection = () => {
     return (
 
-        <div className='flex flex-col lg:flex-row gap-10 justify-between items-center   h-[calc(100vh-5.5rem)]  '>
+        <div className='flex flex-col lg:flex-row gap-10 justify-between items-center   h-[calc(100vh-6.8rem)]  '>
 
             <section className=' w-full lg:w-[50%] flex flex-col gap-5  '>
                 <h2 className={`typingHeading font-bold text-7xl md:font-extrabold  flex flex-wrap text-mainColor tracking-wide`}>
@@ -20,20 +20,17 @@ const HeroSection = () => {
                 </h2>
                 <p className=' w-11/12 leading-8  text-lg '>Streamline your abroad study processes with AMPHLO, the CRM designed for efficiency and customization.</p>
 
-                <div className='flex gap-5 items-center'>
-                    <Button size={'lg'} className='rounded-full' asChild>
-                        <Link href={'/features'}>
+                <div className={`flex flex-col sm:flex-row gap-4 `}>
+                    <Button size="lg" className="rounded-full" asChild>
+                        <Link href="/features">
                             Explore Features
                         </Link>
-
                     </Button>
-                    <Button variant={'outline'} size={'lg'} className='rounded-full' asChild>
-                        <Link href={'/contact-us'}>
+                    <Button variant="outline" size="lg" className="rounded-full group" asChild>
+                        <Link href="/contact-us" className="flex items-center">
                             Contact Us
-                            <ArrowRight className='ml-2 h-4 w-4 transition-transform group-hover:translate-x-1' />
-
+                            <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                         </Link>
-
                     </Button>
                 </div>
             </section>

@@ -1,3 +1,4 @@
+import AboutAmphlo from "@/components/page-components/home/about-amphlo";
 import Excellence from "@/components/page-components/home/excellence";
 import ExploreDestination from "@/components/page-components/home/explore-destination";
 import Features from "@/components/page-components/home/features/features";
@@ -19,6 +20,7 @@ export default function Home() {
         <Excellence />
       </div>
       <div className="w-11/12 mx-auto  md:px-0 flex flex-col gap-16 md:gap-20  px-10" >
+        <AboutAmphlo />
         <PartnerTestimonial />
       </div>
     </div>

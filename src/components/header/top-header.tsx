@@ -12,6 +12,7 @@ import {
     DropdownMenuItem,
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
+import { ArrowRight } from "lucide-react";
 
 
 export type LinkItem = {
@@ -29,7 +30,7 @@ const TopHeader = () => {
 
     return (
         <header className="sticky top-0 left-0 right-0 z-50 bg-white shadow-md transition-colors duration-300 text-black">
-            <div className="hidden md:flex justify-between items-center w-11/12 mx-auto h-[68px] px-2 py-2 lg:px-4">
+            <div className="hidden md:flex justify-between items-center w-11/12 mx-auto h-[4.3rem] px-2 py-2 lg:px-4">
                 {/* Logo */}
                 <Link href={"/"} className="flex items-center py-4">
                     <Image
@@ -40,7 +41,7 @@ const TopHeader = () => {
                         width={300}
                         quality={100}
                         priority
-                        className="h-[6px] w-auto object-contain hover:scale-110 transition-transform duration-300 ease-in-out"
+                        className="h-[60px] w-auto object-contain hover:scale-110 transition-transform duration-300 ease-in-out"
                     />
 
                 </Link>
@@ -91,9 +92,10 @@ const TopHeader = () => {
                             Join Us
                         </Link>
                     </Button>
-                    <Button className="rounded-full" variant={'outline'} size={'lg'} asChild >
-                        <Link className="" href={'/contact-us'}>
+                    <Button variant="outline" size="lg" className="rounded-full group" asChild>
+                        <Link href="/contact-us" className="flex items-center">
                             Contact Us
+                            <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                         </Link>
                     </Button>
                 </div>
