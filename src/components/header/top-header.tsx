@@ -6,13 +6,10 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { navLinks } from "./navlink";
 import { Button } from "../ui/button";
-import { ArrowRight } from "lucide-react";
 import {
     DropdownMenu,
     DropdownMenuContent,
     DropdownMenuItem,
-    DropdownMenuLabel,
-    DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 

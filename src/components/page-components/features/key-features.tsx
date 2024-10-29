@@ -1,6 +1,6 @@
-import features, { featuresData } from '@/components/page-components/home/features/feature-data';
+import { featuresData } from '@/components/page-components/home/features/feature-data';
 import React from 'react';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../../ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '../../ui/card';
 import Image from 'next/image';
 
 const KeyFeatures = () => {
@@ -8,7 +8,7 @@ const KeyFeatures = () => {
         <div className='flex flex-col gap-10'>
             <div className='flex flex-col gap-3 items-start justify-start'>
 
-                <h2 className='text-mainColor text-xl font-semibold '>AMPHLO's Core Features</h2>
+                <h2 className='text-mainColor text-xl font-semibold '>AMPHLO&apos;s Core Features</h2>
                 <h2 className='text-4xl font-bold '>
                     Optimize Your Study Management
                 </h2>

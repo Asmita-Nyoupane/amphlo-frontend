@@ -1,32 +1,14 @@
 "use client"
 
-import { useState } from 'react'
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { MapPin, Phone, Mail, Facebook, Twitter, Linkedin } from "lucide-react"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import ContactTopSection from '@/components/page-components/contact-us/contact-top-section'
 
 export default function ContactPage() {
-    const [name, setName] = useState('')
-    const [email, setEmail] = useState('')
-    const [message, setMessage] = useState('')
-
-    const handleSubmit = (e: React.FormEvent) => {
-        e.preventDefault()
-        // Here you would typically send the form data to your backend
-        console.log('Form submitted:', { name, email, message })
-        // Reset form fields
-        setName('')
-        setEmail('')
-        setMessage('')
-    }
-
+   
     return (
         <div className="container mx-auto px-4 py-8">
             <h1 className="text-4xl font-bold text-center mb-4">Contact Amphlo CRM</h1>
-            <p className="text-center text-lg mb-12">We're here to help streamline your study abroad process</p>
+            <p className="text-center text-lg mb-12">We&apos;re here to help streamline your study abroad process</p>
 
             <ContactTopSection />
 

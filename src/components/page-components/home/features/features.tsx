@@ -1,5 +1,5 @@
 import React from 'react';
-import features, { featuresData } from './feature-data';
+import { featuresData } from './feature-data';
 import {
     Card,
     CardContent,

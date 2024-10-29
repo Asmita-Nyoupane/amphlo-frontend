@@ -1,4 +1,3 @@
-import { Table } from "lucide-react";
 
 
 export const featuresData = [

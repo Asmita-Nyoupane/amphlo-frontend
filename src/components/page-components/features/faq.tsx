@@ -43,7 +43,7 @@ const AmpholoFAQ = () => {
             <section className='container'>
                 {amphloFaqs.map((faq) =>
                 (
-                    <Accordion type="multiple" className="w-full">
+                    <Accordion type="multiple" className="w-full" key={faq.question}>
                         <AccordionItem value="item-1">
                             <AccordionTrigger className=' text-lg font-semibold'>{faq.question}</AccordionTrigger>
                             <AccordionContent className='text-base'>

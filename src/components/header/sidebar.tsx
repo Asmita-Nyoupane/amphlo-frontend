@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
-import { footerLink, navLinks } from "./navlink";
+import { footerLink } from "./navlink";
 import { LinkItem } from "./top-header";
 import { Button } from "../ui/button";
 

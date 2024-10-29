@@ -6,7 +6,7 @@ const Interface = () => {
 
             <h2 className="text-4xl font-bold text-mainColor">AMPHLO Interface</h2>
             <p className="text-muted-foreground">
-                Explore the intuitive design of AMPHLO's CRM interface.
+                Explore the intuitive design of AMPHLO&apos;s CRM interface.
             </p>
 
         </div>

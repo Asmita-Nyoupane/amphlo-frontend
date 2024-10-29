@@ -7,7 +7,7 @@ const FeatureTopSection = () => {
             <section className=' w-full md:w-[50%] flex flex-col gap-5 justify-start '>
 
                 <h2 className='text-3xl font-bold text-mainColor tracking-wide  md:text-6xl   max-w-xl'>
-                    Explore AMPHLO's Key Features
+                    Explore AMPHLO&apos;s Key Features
                 </h2>
                 <p className='text-xl text-muted-foreground mt-4 text-center leading-8 max-w-2xl'>
                     Discover how AMPHLO streamlines the abroad study process with advanced management tools and customizable themes.
