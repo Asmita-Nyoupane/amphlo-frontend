@@ -25,7 +25,7 @@ const whyChooseAmphlo = [
 const AboutAmphlo = () => {
     return (
         <div className="flex flex-col-reverse lg:flex-row justify-between gap-12 " data-aos="fade-up" >
-            <section className="w-full lg:w-[48%] ">
+            <section className="w-full lg:w-[50%] ">
                 <Image
                     src={"/assets/about.jpg"}
                     alt="hero-image"
