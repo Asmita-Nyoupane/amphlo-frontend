@@ -30,7 +30,7 @@ const HeroSection = () => {
                     </Button>
                 </div>
             </section>
-            <section className='flex-1   w-full '>
+            <section className='flex-1  mt-0 lg:mt-10   w-full '>
                 <Image
                     src={'/assets/hero-image.jpeg'}
                     alt='hero-image'
