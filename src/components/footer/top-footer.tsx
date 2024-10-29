@@ -1,7 +1,6 @@
 
 import Link from 'next/link'
 import React from 'react'
-
 import Image from 'next/image'
 import { contacts, footerLink } from '../header/navlink'
 import { LinkItem } from '../header/top-header'

@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const PartnerTopsection = () => {
@@ -13,8 +14,11 @@ const PartnerTopsection = () => {
                 <p className='text-lg text-muted-foreground leading-8 max-w-2xl'>
                     At Ampholo-CRM, we understand the complexities involved in the study abroad journey. Our mission is to simplify and enhance this experience for students, educational institutions, and partner organizations. By partnering with us, you can play a pivotal role in transforming the study abroad process into a seamless, efficient, and enriching experience.
                 </p>
-                <Button className='w-fit'>
-                    Connect With Us
+                <Button className='w-fit' asChild>
+                    <Link href={'/contact-us'}>
+                        Connect With Us
+                    </Link>
+
                 </Button>
             </section>
             <section className='flex-1 '>

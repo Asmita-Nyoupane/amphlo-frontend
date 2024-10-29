@@ -32,20 +32,7 @@ const UniversityTopSection = () => {
                 </p>
             </div>
 
-            {/* University Logos Section */}
-            {/* <section className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 items-center justify-center">
-                {uniData.map((uni, index) => (
-                    <div key={index} className="flex items-center justify-center">
-                        <Image
-                            src={uni.image}
-                            alt={`${uni.name} logo`}
-                            width={100}
-                            height={100}
-                            className="w-24 h-24 object-contain hover:scale-105 transition-transform duration-300 ease-in-out"
-                        />
-                    </div>
-                ))}
-            </section> */}
+
             {/* infinite scrolling */}
             <div className="flex flex-wrap justify-center space-x-8 py-10">
                 <div className="flex overflow-hidden space-x-16 group   mx-auto">

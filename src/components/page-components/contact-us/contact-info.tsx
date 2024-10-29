@@ -15,19 +15,19 @@ const ContactInfo = () => {
             </CardHeader>
 
             <CardContent className="space-y-4">
-                <Card className="flex items-center space-x-3 p-4 bg-teal-50 ">
+                <Card className="flex items-center space-x-3 p-4 bg-gray-50 ">
 
                     <MapPin className=" w-5 h-5" />
                     <span className="">Tilotama-4, Rupandehi</span>
                 </Card>
 
-                <Card className="flex items-center space-x-3 p-4 bg-teal-50 ">
+                <Card className="flex items-center space-x-3 p-4 bg-gray-50 ">
 
                     <Phone className=" w-5 h-5" />
                     <span className="">98346356478</span>
                 </Card>
 
-                <Card className="flex items-center space-x-3 p-4 bg-teal-50 ">
+                <Card className="flex items-center space-x-3 p-4 bg-gray-50 ">
 
                     <Mail className=" w-5 h-5" />
                     <span className="">contact@amphlocrm.com</span>

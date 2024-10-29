@@ -1,29 +1,20 @@
-"use client"
 
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import ContactTopSection from '@/components/page-components/contact-us/contact-top-section'
+import ContactTopSection from "@/components/page-components/contact-us/contact-top-section";
+import MapSection from "@/components/page-components/contact-us/map-section";
 
 export default function ContactPage() {
-   
     return (
-        <div className="container mx-auto px-4 py-8">
-            <h1 className="text-4xl font-bold text-center mb-4">Contact Amphlo CRM</h1>
-            <p className="text-center text-lg mb-12">We&apos;re here to help streamline your study abroad process</p>
+        <div className="w-11/12 mx-auto  flex flex-col gap-16 lg:gap-20 px-4 py-8">
+            <div className="space-y-4">
+                <h1 className="text-4xl font-bold text-center text-mainColor ">Contact Amphlo CRM</h1>
+                <p className="text-center text-lg mb-12">
+                    We&apos;re here to help streamline your study abroad process
+                </p>
+            </div>
 
             <ContactTopSection />
+            <MapSection />
 
-            <div className="mt-12">
-                <Card>
-                    <CardHeader>
-                        <CardTitle className='text-2xl text-mainColor'>Our Location</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                        <div className="aspect-video  flex items-center justify-center">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.6635269358503!2d83.46291407546593!3d27.665880076206292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3996850023dc034f%3A0xde2f6844941a9b38!2sLopho%20Abroad%20Consultancy%20(Head%20Office)!5e0!3m2!1sen!2snp!4v1730111145285!5m2!1sen!2snp" width="1200" height="800" loading="lazy" ></iframe>
-                        </div>
-                    </CardContent>
-                </Card>
-            </div>
         </div>
-    )
+    );
 }
