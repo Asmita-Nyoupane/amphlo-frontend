@@ -5,7 +5,7 @@ import { uniData } from '../for-university/uni-top-section'
 
 const UniversityShowCase = () => {
     return (
-        <div className='flex flex-col gap-10  container mx-auto items-center justify-center' data-aos="fade-up">
+        <div className='flex flex-col gap-10  w-11/12 mx-auto items-center justify-center' data-aos="fade-up">
             <div className='space-y-3'>
 
                 <h2 className='text-4xl text-center font-bold text-mainColor'>Global University Network</h2>

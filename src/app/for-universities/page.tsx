@@ -11,7 +11,7 @@ const UniversityPage = () => {
 
                 <UniversityTopSection />
             </div>
-            <div className='container  mx-auto'>
+            <div className='w-11/12  mx-auto'>
 
                 <WhyAmphlo />
             </div>

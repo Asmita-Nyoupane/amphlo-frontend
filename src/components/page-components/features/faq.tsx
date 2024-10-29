@@ -40,7 +40,7 @@ const AmpholoFAQ = () => {
         <div className='flex flex-col gap-6' data-aos="fade-up">
             <h2 className='text-4xl text-mainColor font-bold '>AMPHLO FAQs</h2>
 
-            <section className='container'>
+            <section className='w-11/12 mx-auto'>
                 {amphloFaqs.map((faq) =>
                 (
                     <Accordion type="multiple" className="w-full" key={faq.question}>

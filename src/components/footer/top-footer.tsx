@@ -14,7 +14,7 @@ const TopFooter = () => {
             <section className='space-y-6'>
                 <Link href={'/'}>
                     <Image
-                        src={'/assets/logo.png'}
+                        src={'/assets/white.png'}
                         alt="logo"
                         height={300}
                         width={300}
@@ -24,7 +24,7 @@ const TopFooter = () => {
                     />
 
                 </Link>
-                <p className='text-sm text-gray-400'>
+                <p className='text-sm text-gray-400 text-balance'>
                     Explore the unparalleled advantages of AMPHLO, designed to streamline your abroad study processes with precision and flexibility.
                 </p>
             </section>

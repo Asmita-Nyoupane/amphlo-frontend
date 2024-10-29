@@ -4,7 +4,7 @@ import React from 'react'
 
 const StudyInAustraliaPage = () => {
     return (
-        <div className='container mx-auto flex flex-col gap-16  lg:gap-20 mt-10'>
+        <div className='w-11/12 mx-auto flex flex-col gap-16 px-4  lg:gap-20 mt-10'>
             <USATopSection />
             <WhyChooseAmphlo />
         </div>

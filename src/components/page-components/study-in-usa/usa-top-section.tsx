@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const USATopSection = () => {
@@ -13,8 +14,11 @@ const USATopSection = () => {
                 <p className='text-lg text-muted-foreground leading-8 max-w-2xl'>
                     Dreaming of studying in USA? With its world-renowned universities, diverse cultural experiences, and opportunities for global networking, USA offers students an enriching environment to learn and grow. At Amphlo, our CRM platform simplifies the study abroad process, providing a seamless experience to ensure you can focus on what truly matters: your education and personal journey.
                 </p>
-                <Button className='w-fit'>
-                    Contact Us
+                <Button className='w-fit' asChild>
+                    <Link href='/contact-us'>
+                        Contact Us
+                    </Link>
+
                 </Button>
             </section>
             <section className='flex-1 mt-10'>

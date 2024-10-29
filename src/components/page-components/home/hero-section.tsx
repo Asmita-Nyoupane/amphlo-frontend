@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button'
 import { ArrowRight } from 'lucide-react'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const HeroSection = () => {
@@ -20,17 +21,23 @@ const HeroSection = () => {
                 <p className=' w-11/12 leading-8  text-lg '>Streamline your abroad study processes with AMPHLO, the CRM designed for efficiency and customization.</p>
 
                 <div className='flex gap-5 items-center'>
-                    <Button size={'lg'} className='rounded-full'>
-                        Explore Features
+                    <Button size={'lg'} className='rounded-full' asChild>
+                        <Link href={'/features'}>
+                            Explore Features
+                        </Link>
+
                     </Button>
-                    <Button variant={'outline'} size={'lg'} className='rounded-full'>
-                        Contact Us <span>
-                            <ArrowRight />
-                        </span>
+                    <Button variant={'outline'} size={'lg'} className='rounded-full' asChild>
+                        <Link href={'/contact-us'}>
+                            Contact Us <span>
+                                <ArrowRight />
+                            </span>
+                        </Link>
+
                     </Button>
                 </div>
             </section>
-            <section className='flex-1  mt-0 lg:mt-10   w-full '>
+            <section className='flex-1  lg:mt-10   w-full '>
                 <Image
                     src={'/assets/hero-image.jpeg'}
                     alt='hero-image'

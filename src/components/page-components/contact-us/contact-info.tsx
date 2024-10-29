@@ -8,8 +8,8 @@ const ContactInfo = () => {
     return (
         <Card className="p-6   border border-gray-200" >
             <CardHeader className="-mt-4">
-                <CardTitle className="text-2xl font-semibold ">Contact Information</CardTitle>
-                <CardDescription className="text-gray-600">
+                <CardTitle className="text-2xl font-semibold text-center">Contact Information</CardTitle>
+                <CardDescription className="text-muted-foreground text-center mt-3">
                     You can also reach us through these channels:
                 </CardDescription>
             </CardHeader>

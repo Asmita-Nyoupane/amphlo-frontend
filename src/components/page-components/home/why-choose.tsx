@@ -27,7 +27,7 @@ const features = [
 
 const WhyChoose = () => {
     return (
-        <div className='flex flex-col lg:flex-row gap-14 justify-between' data-aos="fade-up">
+        <div className='flex flex-col lg:flex-row gap-14 justify-between lg:px-2' data-aos="fade-up">
             <section className='w-full lg:w-[50%] '>
                 <Image
                     src={'/assets/choose.jpeg'}

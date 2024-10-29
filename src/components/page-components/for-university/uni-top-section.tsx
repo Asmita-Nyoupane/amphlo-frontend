@@ -16,14 +16,14 @@ export const uniData = [
 
 const UniversityTopSection = () => {
     return (
-        <div className="flex flex-col gap-12 container mx-auto   mt-10 " data-aos="fade-up">
+        <div className="flex flex-col gap-12 w-11/12 mx-auto   mt-10 " data-aos="fade-up">
             {/* Header Section */}
-            <div className="flex flex-col items-center text-center gap-6 max-w-4xl mx-auto">
+            <div className="flex flex-col items-center md:text-center gap-6 max-w-4xl mx-auto">
                 <h2 className="text-3xl md:text-5xl font-bold text-mainColor tracking-wide leading-tight">
                     Explore our trusted university partnerships designed to provide
                     students with seamless global opportunities.
                 </h2>
-                <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
+                <p className="md:text-lg text-gray-600 leading-relaxed">
                     Amphlo collaborates with top universities worldwide to simplify the
                     admissions process, making it more efficient for both students and
                     universities. Our CRM platform connects institutions with prospective

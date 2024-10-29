@@ -49,13 +49,13 @@ const PartnerTestimonial = () => {
         ],
     };
     return (
-        <div className='flex flex-col gap-10 '>
+        <div className='flex flex-col gap-10 ' data-aos="fade-up">
             <div className='flex flex-col gap-2'>
 
                 <h2 className='text-4xl font-bold text-mainColor'>Partner Testimonials</h2>
                 <p className='font-medium'> {testimonialLength} Reviews</p>
             </div>
-            <div className="slider-container  flex flex-col gap-6">
+            <div className="slider-w-11/12  flex flex-col gap-6">
                 <Slider {...settings} className=''>
 
                     {
