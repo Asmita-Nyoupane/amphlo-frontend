@@ -22,7 +22,7 @@ const crmSetupSteps = [
 
 const Steps = () => {
     return (
-        <div className="flex flex-col gap-8 items-center justify-center ">
+        <div className="flex flex-col gap-8 items-center justify-center py-20 " data-aos="fade-up">
             <h2 className="text-4xl font-bold text-mainColor">How to Leverage AMPHLO</h2>
             <p className="text-muted-foreground text-center ">
                 A step-by-step guide to maximizing the potential of AMPHLO for your consultancy.

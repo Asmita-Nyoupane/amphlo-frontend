@@ -44,7 +44,7 @@ const reasonsToChooseAmphlo = [
 
 const WhyAmphlo = () => {
     return (
-        <div className="flex flex-col gap-10 p-6">
+        <div className="flex flex-col gap-10 p-6" data-aos="fade-up">
             <section className="text-center flex gap-4 flex-col items-center justify-center">
                 <h2 className="text-4xl font-bold ">Why Choose Amphlo?</h2>
                 <p className=" text-muted-foreground max-w-2xl">

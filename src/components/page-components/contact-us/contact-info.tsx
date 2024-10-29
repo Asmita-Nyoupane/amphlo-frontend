@@ -6,7 +6,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 const ContactInfo = () => {
     return (
-        <Card className="p-6   border border-gray-200">
+        <Card className="p-6   border border-gray-200" >
             <CardHeader className="-mt-4">
                 <CardTitle className="text-2xl font-semibold ">Contact Information</CardTitle>
                 <CardDescription className="text-gray-600">

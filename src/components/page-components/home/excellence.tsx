@@ -26,21 +26,21 @@ const statistics = [
 
 const Excellence = () => {
     return (
-        <div className='flex flex-col lg:flex-row gap-14 container mx-auto  px-4 md:px-0 py-20'>
+        <div className='flex flex-col lg:flex-row gap-14 container mx-auto  px-4 md:px-0 py-20' data-aos="fade-up">
             <section className='flex flex-col gap-4 w-full lg:w-[50%]'>
 
                 <h2 className='text-4xl font-bold'>
                     Excellence in Global Education Management
                 </h2>
-                <p className='leading-7'>
+                <p className='leading-7 '>
                     AMPHLO empowers partners with top-tier tools for managing study abroad processes. Our platform is designed to streamline student enrollments, enhance team communication, and optimize commission tracking.
                 </p>
             </section>
             <section className="relative w-full lg:w-[50%] h-64 mx-auto text-center grid grid-cols-2 gap-4">
                 {/* X and Y axis lines */}
                 <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                    <div className="w-full h-[0.5px] bg-muted-foreground absolute top-1/2 transform -translate-y-1/2" /> {/* X-axis */}
-                    <div className="h-full w-[0.5px] bg-muted-foreground absolute left-1/2 transform -translate-x-1/2" /> {/* Y-axis */}
+                    <div className="w-full h-[0.5px] bg-slate-300 absolute top-1/2 transform -translate-y-1/2" /> {/* X-axis */}
+                    <div className="h-full w-[0.5px] bg-slate-300 absolute left-1/2 transform -translate-x-1/2" /> {/* Y-axis */}
                 </div>
 
                 {/* Statistic items */}

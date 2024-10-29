@@ -25,7 +25,7 @@ const statisticsData = [
 
 const JourneyAndImpact = () => {
     return (
-        <div className='flex flex-col gap-10 bg-mainColor/95 text-white px-4 py-12 lg:px-20 lg:py-16'>
+        <div className='flex flex-col gap-10 bg-mainColor/95 text-white px-4 py-12 lg:px-20 lg:py-16' data-aos="fade-up">
             <section className='flex flex-col gap-4'>
                 <h2 className='text-4xl font-bold'>Our Journey and Impact</h2>
                 <p>

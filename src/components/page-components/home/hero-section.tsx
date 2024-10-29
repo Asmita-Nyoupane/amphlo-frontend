@@ -7,8 +7,16 @@ const HeroSection = () => {
     return (
 
         <div className='flex flex-col lg:flex-row gap-10 justify-between items-center   h-[calc(100vh-6.5rem)] '>
+
             <section className=' w-full lg:w-[50%] flex flex-col gap-5  '>
-                <h2 className=' text-4xl  font-bold lg:text-7xl md:font-extrabold text-mainColor tracking-wide'>Welcome to Amphlo</h2>
+                <div className={`typingHeading font-bold text-7xl md:font-extrabold  flex flex-col gap-4  text-mainColor tracking-wide`}>
+                    <h2 className='mb-4'>Welcome to
+                    </h2>
+
+                    <h2 className='text-cyan-800 '>
+                        Amphlo
+                    </h2>
+                </div>
                 <p className=' w-11/12 leading-8  text-lg '>Streamline your abroad study processes with AMPHLO, the CRM designed for efficiency and customization.</p>
 
                 <div className='flex gap-5 items-center'>

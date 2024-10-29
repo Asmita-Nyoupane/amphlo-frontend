@@ -24,7 +24,7 @@ const galleries = [
 
 const Gallery = () => {
     return (
-        <div className='flex flex-col gap-10 items-center justify-center'>
+        <div className='flex flex-col gap-10 items-center justify-center' data-aos="fade-up">
             <div className='space-y-3'>
 
                 <h2 className='text-4xl text-center font-bold text-mainColor'>Our Gallery</h2>

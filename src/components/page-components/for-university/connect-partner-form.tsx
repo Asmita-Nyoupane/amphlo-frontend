@@ -39,7 +39,7 @@ export function ContactForm() {
     }
 
     return (
-        <Form {...form}>
+        <Form {...form} >
             <h2 className="text-center text-2xl font-semibold pb-10">
                 Connect With Us
             </h2>

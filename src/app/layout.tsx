@@ -4,6 +4,7 @@ import "./globals.css";
 import TopHeader from "@/components/header/top-header";
 import Footer from "@/components/footer/footer";
 import SideHeader from "@/components/header/sidebar";
+import { AOSInit } from "@/components/aos-init";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -33,6 +34,7 @@ export default function RootLayout({
       >
         <TopHeader />
         <SideHeader />
+        <AOSInit />
         {children}
         <Footer />
       </body>

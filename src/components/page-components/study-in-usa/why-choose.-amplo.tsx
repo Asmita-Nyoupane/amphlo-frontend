@@ -32,7 +32,7 @@ const studyAbroadBenefits = [
 
 const WhyChooseAmphlo = () => {
     return (
-        <section className="flex flex-col gap-10">
+        <section className="flex flex-col gap-10" data-aos="fade-up">
             <h2 className="text-3xl font-bold text-center ">Why Choose Amphlo?</h2>
             <section className="flex gap-8 flex-wrap items-center justify-center">
                 {studyAbroadBenefits?.map((feature) => (

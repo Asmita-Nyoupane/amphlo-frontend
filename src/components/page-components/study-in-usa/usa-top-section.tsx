@@ -4,7 +4,7 @@ import React from 'react'
 
 const USATopSection = () => {
     return (
-        <div className='flex flex-col md:flex-row  items-center justify-center  gap-10'>
+        <div className='flex flex-col md:flex-row  items-center justify-center  gap-10' data-aos="fade-up">
             <section className=' w-full md:w-[50%] flex flex-col gap-5 justify-start '>
 
                 <h2 className='text-3xl font-bold text-mainColor tracking-wide  md:text-4xl   max-w-xl'>

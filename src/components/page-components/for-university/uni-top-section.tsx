@@ -16,7 +16,7 @@ export const uniData = [
 
 const UniversityTopSection = () => {
     return (
-        <div className="flex flex-col gap-12 container mx-auto   mt-10 ">
+        <div className="flex flex-col gap-12 container mx-auto   mt-10 " data-aos="fade-up">
             {/* Header Section */}
             <div className="flex flex-col items-center text-center gap-6 max-w-4xl mx-auto">
                 <h2 className="text-3xl md:text-5xl font-bold text-mainColor tracking-wide leading-tight">

@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const KeyFeatures = () => {
     return (
-        <div className='flex flex-col gap-10'>
+        <div className='flex flex-col gap-10 ' data-aos="fade-up">
             <div className='flex flex-col gap-3 items-start justify-start'>
 
                 <h2 className='text-mainColor text-xl font-semibold '>AMPHLO&apos;s Core Features</h2>

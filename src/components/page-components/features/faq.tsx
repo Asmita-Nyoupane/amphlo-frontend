@@ -37,7 +37,7 @@ const amphloFaqs = [
 
 const AmpholoFAQ = () => {
     return (
-        <div className='flex flex-col gap-6'>
+        <div className='flex flex-col gap-6' data-aos="fade-up">
             <h2 className='text-4xl text-mainColor font-bold '>AMPHLO FAQs</h2>
 
             <section className='container'>

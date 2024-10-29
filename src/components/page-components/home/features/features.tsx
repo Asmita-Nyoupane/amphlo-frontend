@@ -11,7 +11,7 @@ import Image from 'next/image';
 
 const Features = () => {
     return (
-        <div className="flex flex-col gap-8 items-center justify-center p-8">
+        <div className="flex flex-col gap-8 items-center justify-center p-8 mt-16 lg:mt-0 " data-aos="fade-up">
             <h2 className="text-4xl font-bold text-mainColor">Key Features of AMPHLO</h2>
             <p className="text-muted-foreground text-center max-w-lg">
                 Discover how AMPHLO can enhance your abroad study management with advanced tools and customizable themes.

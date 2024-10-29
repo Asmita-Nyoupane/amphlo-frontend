@@ -38,13 +38,13 @@ const partnershipBenefits = [
 
 const PartnershipBenefits = () => {
     return (
-        <div className="container mx-auto flex flex-col gap-10 py-16">
+        <div className="container mx-auto flex flex-col gap-10 py-16"  >
             <h2 className="text-center text-4xl font-bold text-mainColor ">
                 Benefits of Partnership
             </h2>
-            <div className="container mx-auto px-4">
+            <div className="container mx-auto px-4" >
                 {partnershipBenefits.map((benefit, index) => (
-                    <Card key={index} className="mb-8 p-6 bg-white shadow-md rounded-lg transition-transform transform hover:scale-105">
+                    <Card key={index} className="mb-8 p-6 bg-white shadow-md rounded-lg transition-transform transform hover:scale-105" data-aos="fade-up">
                         <div className="flex items-center space-x-4">
                             <Image
                                 height={300}

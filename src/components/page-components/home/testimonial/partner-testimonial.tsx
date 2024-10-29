@@ -30,7 +30,7 @@ const PartnerTestimonial = () => {
                 },
             },
             {
-                breakpoint: 600,
+                breakpoint: 770,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,

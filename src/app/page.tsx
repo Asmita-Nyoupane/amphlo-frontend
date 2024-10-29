@@ -16,7 +16,7 @@ export default function Home() {
       <div className="bg-blue-50">
         <Excellence />
       </div>
-      <div className="container mx-auto px-4 md:px-0 flex flex-col gap-16 md:gap-20">
+      <div className="container mx-auto px-4 md:px-0 flex flex-col gap-16 md:gap-20 " data-aos="fade-left">
         <PartnerTestimonial />
       </div>
     </div>
