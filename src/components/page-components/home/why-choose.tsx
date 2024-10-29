@@ -49,15 +49,18 @@ const WhyChoose = () => {
                             className="flex flex-col gap-4 "
                         >
                             {/* Icon and Title */}
-                            <div className="flex items-center gap-3">
-                                <div className="p-4 rounded-full bg-mainColor/10 text-mainColor flex items-center justify-center">
+                            <div className="flex items-start gap-3">
+                                <div className="p-4 rounded-full bg-gray-100 text-mainColor flex items-center justify-center">
                                     <feature.icon size={24} />
                                 </div>
-                                <h3 className="text-lg font-semibold">{feature.title}</h3>
+                                <div className='flex flex-col gap-3 '>
+
+                                    <h3 className="text-lg font-semibold">{feature.title}</h3>
+                                    <p className="text-muted-foreground ">{feature.description}</p>
+                                </div>
                             </div>
 
                             {/* Description */}
-                            <p className="text-muted-foreground ">{feature.description}</p>
                         </div>
                     ))}
                 </div>
