@@ -84,14 +84,14 @@ const TopHeader = () => {
                 </nav>
 
 
-                <div className="flex gap-6 items-center">
+                <div className="flex gap-4 items-center">
 
-                    <Button className="rounded-xl" variant={'ghost'} asChild>
+                    <Button className="rounded-full" variant={'ghost'} size={'lg'} asChild>
                         <Link href='/' >
                             Join Us
                         </Link>
                     </Button>
-                    <Button className="rounded-xl" variant={'outline'} asChild >
+                    <Button className="rounded-full" variant={'outline'} size={'lg'} asChild >
                         <Link className="" href={'/contact-us'}>
                             Contact Us
                         </Link>

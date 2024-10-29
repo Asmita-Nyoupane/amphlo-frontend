@@ -9,11 +9,11 @@ const FeatureTopSection = () => {
                 <h2 className='text-3xl font-bold text-mainColor tracking-wide  md:text-6xl   max-w-xl'>
                     Explore AMPHLO&apos;s Key Features
                 </h2>
-                <p className='text-xl text-muted-foreground mt-4 text-center leading-8 max-w-2xl'>
+                <p className='text-lg text-muted-foreground text-center leading-8 max-w-2xl'>
                     Discover how AMPHLO streamlines the abroad study process with advanced management tools and customizable themes.
                 </p>
             </section>
-            <section className='flex-1 mt-10'>
+            <section className='flex-1'>
                 <Image
                     src={'/assets/leaverage.jpeg'}
                     alt='hero-image'

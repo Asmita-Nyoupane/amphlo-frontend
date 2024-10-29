@@ -78,12 +78,12 @@ const SideHeader = () => {
                         </Link>
                     ))}
                     <div className="flex gap-3 flex-col justify-start">
-                        <Button className="rounded-xl  w-fit min-w-32" variant={'secondary'} asChild>
+                        <Button className="rounded-full  w-fit min-w-32" size={'lg'} variant={'secondary'} asChild>
                             <Link href='/' >
                                 Join Us
                             </Link>
                         </Button>
-                        <Button className="rounded-xl w-fit min-w-32 " variant={'outline'} asChild >
+                        <Button className="rounded-full w-fit min-w-32 " size={'lg'} variant={'outline'} asChild >
                             <Link className="" href={'/contact-us'}>
                                 Contact Us
                             </Link>

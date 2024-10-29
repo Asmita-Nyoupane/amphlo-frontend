@@ -19,7 +19,7 @@ const USATopSection = () => {
             </section>
             <section className='flex-1 mt-10'>
                 <Image
-                    src={'/assets/usa.jpeg'}
+                    src={'/assets/partners.jpg'}
                     alt='hero-image'
                     height={500}
                     width={500}

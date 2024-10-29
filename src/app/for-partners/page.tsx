@@ -8,8 +8,8 @@ import React from "react";
 
 const ForPartnersPage = () => {
     return (
-        <div className="flex flex-col gap-16 ">
-            <div className="container mx-auto flex flex-col gap-16">
+        <div className="flex flex-col gap-16 md:gap-20 ">
+            <div className="container mx-auto flex flex-col mt-10  px-4 lg:px-0 gap-16 md:gap-20">
                 <PartnerTopsection />
             </div>
             <div className="bg-gray-50">
@@ -19,7 +19,7 @@ const ForPartnersPage = () => {
             <div className="bg-teal-50">
                 <Excellence />
             </div>
-            <div className="container mx-auto flex flex-col gap-16">
+            <div className="container mx-auto flex flex-col  px-4 lg:px-0 gap-16 md:gap-20">
                 <PartnerTestimonial />
             </div>
             <UniversityShowCase />

@@ -6,7 +6,7 @@ import React from 'react'
 
 const FeaturePage = () => {
     return (
-        <div className='flex container mx-auto flex-col gap-16 mt-10'>
+        <div className='flex container mx-auto flex-col gap-16 px-4 lg:px-0 mt-10'>
             <FeatureTopSection />
             <KeyFeatures />
             <Steps />

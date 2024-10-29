@@ -4,10 +4,10 @@ import React from 'react'
 
 const PartnerTopsection = () => {
     return (
-        <div className='flex flex-col md:flex-row  items-center justify-center  gap-10'>
-            <section className=' w-full md:w-[50%] flex flex-col gap-5 justify-start '>
+        <div className='flex flex-col lg:flex-row  items-center justify-center  gap-10'>
+            <section className=' w-full lg:w-[50%] flex flex-col gap-5 justify-start '>
 
-                <h2 className='text-3xl font-bold text-mainColor tracking-wide  md:text-6xl   max-w-xl'>
+                <h2 className='text-4xl font-bold text-mainColor tracking-wide   max-w-xl'>
                     Transforming the Study Abroad Experience
                 </h2>
                 <p className='text-lg text-muted-foreground leading-8 max-w-2xl'>
@@ -17,13 +17,13 @@ const PartnerTopsection = () => {
                     Connect With Us
                 </Button>
             </section>
-            <section className='flex-1 mt-10'>
+            <section className='flex-1 '>
                 <Image
                     src={'/assets/partners.jpg'}
                     alt='hero-image'
                     height={500}
                     width={500}
-                    className='object-cover aspect-square rounded-xl shadow-lg' />
+                    className='object-cover  aspect-square rounded-xl shadow-lg' />
             </section>
         </div>
     )
