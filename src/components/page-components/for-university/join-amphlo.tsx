@@ -5,7 +5,7 @@ import { ContactForm } from './connect-partner-form';
 
 const JoinAmphlo = () => {
     return (
-        <div className='w-11/12 px-4 lg:px-2 mx-auto' data-aos="fade-up">
+        <div className='w-11/12 px-4  mx-auto' data-aos="fade-up">
             <div className='flex flex-col gap-4 mb-10'>
                 <h2 className='text-4xl font-bold text-mainColor'>Join the Amphlo Network</h2>
                 <p className='text-muted-foreground leading-7'>

@@ -93,7 +93,7 @@ body {
 }
 
 .typingHeading {
-  display: inline-block;
+  display: inline-flex;
   overflow: hidden;
   white-space: nowrap;
   animation: typing 5s steps(30, end), blink 0.75s step-end infinite;

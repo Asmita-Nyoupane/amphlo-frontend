@@ -40,7 +40,7 @@ const TopHeader = () => {
                         width={300}
                         quality={100}
                         priority
-                        className="h-[60px] w-auto object-contain hover:scale-110 transition-transform duration-300 ease-in-out"
+                        className="h-[6px] w-auto object-contain hover:scale-110 transition-transform duration-300 ease-in-out"
                     />
 
                 </Link>
@@ -52,13 +52,13 @@ const TopHeader = () => {
                             {link.sublinks ? (
                                 <DropdownMenu>
                                     <DropdownMenuTrigger asChild className="outline-none focus:ring-0">
-                                        <Link
-                                            href={link.link}
+                                        <p
+
                                             className={`font-medium lg:text-md transition-all duration-300 ease-in-out transform hover:scale-110 ${path === link.link ? "text-mainColor font-semibold" : "hover:text-mainColor"
                                                 }`}
                                         >
                                             {link.name}
-                                        </Link>
+                                        </p>
                                     </DropdownMenuTrigger>
                                     <DropdownMenuContent className="bg-white shadow-md">
                                         {link.sublinks.map((sublink, j) => (

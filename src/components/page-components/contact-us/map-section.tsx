@@ -6,7 +6,7 @@ const MapSection = () => {
 
         <div className='flex flex-col gap-4' data-aos="fade-up">
             <h2 className="text-4xl font-bold  text-mainColor text-center ">
-                Location
+                Our  Location
             </h2>
             <div className="aspect-video  flex items-center justify-center rounded-xl shadow-md  ">
                 <iframe

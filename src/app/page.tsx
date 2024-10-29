@@ -7,7 +7,7 @@ import WhyChoose from "@/components/page-components/home/why-choose";
 export default function Home() {
   return (
     <div className=" flex flex-col   gap-16  md:gap-20">
-      <div className="w-11/12 mx-auto mt-10 flex flex-col gap-16 md:gap-20 ">
+      <div className="w-11/12 mx-auto mt-10 flex flex-col gap-16 md:gap-20  px-6">
         <HeroSection />
         <Features />
         <WhyChoose />
@@ -16,7 +16,7 @@ export default function Home() {
       <div className="bg-gray-50">
         <Excellence />
       </div>
-      <div className="w-11/12 mx-auto px-4 md:px flex flex-col gap-16 md:gap-20 " >
+      <div className="w-11/12 mx-auto  md:px-0 flex flex-col gap-16 md:gap-20  px-10" >
         <PartnerTestimonial />
       </div>
     </div>

@@ -26,7 +26,7 @@ const statistics = [
 
 const Excellence = () => {
     return (
-        <div className='flex flex-col lg:flex-row gap-14 w-11/12 mx-auto  px-4 lg:px-2 py-20' data-aos="fade-up">
+        <div className='flex flex-col lg:flex-row gap-14 w-11/12 mx-auto  px-4 py-20' data-aos="fade-up">
             <section className='flex flex-col gap-4 w-full lg:w-[50%]'>
 
                 <h2 className='text-4xl font-bold'>

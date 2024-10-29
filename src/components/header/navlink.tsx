@@ -22,7 +22,8 @@ const footerLink = [
     { link: "/", name: "Home" },
     // { link: "/about", name: "About Us" },
     { link: "/features", name: "Features" },
-    { link: "/countries", name: "Countries" },
+    { link: "/study-in-usa", name: "Study In USA" },
+    { link: "/study-in-australia", name: "Study In Australia" },
     { link: "/for-universities", name: "For Universities" },
     { link: "/for-partners", name: "For Partners " },
 ]

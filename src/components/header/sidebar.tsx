@@ -29,11 +29,11 @@ const SideHeader = () => {
                     <Image
                         src="/assets/logo.png"
                         alt="logo"
-                        height={40}
+                        height={120}
                         width={120}
                         quality={100}
                         priority={true}
-                        className="h-[40px] w-auto object-contain"
+                        className="h-[60px] w-auto object-contain"
                     />
                 </Link>
                 <button onClick={toggleNavBar} className="text-2xl text-mainColor ">
@@ -52,11 +52,11 @@ const SideHeader = () => {
                         <Image
                             src="/assets/logo.png"
                             alt="logo"
-                            height={40}
+                            height={120}
                             width={120}
                             quality={100}
                             priority={true}
-                            className="h-[40px] w-auto object-contain"
+                            className="h-[60px] w-auto object-contain"
                         />
                     </Link>
                     <button onClick={closeNavBar} className="text-mainColor hover:bg-gray-100 p-2 rounded-full">

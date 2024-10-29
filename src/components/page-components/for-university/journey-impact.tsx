@@ -38,8 +38,8 @@ const JourneyAndImpact = () => {
                         key={stat.title}
                         className='flex flex-col  gap-3 items-center justify-center bg-white text-gray-800 rounded-lg p-6 shadow-md transition-transform transform hover:scale-105'
                     >
-                        <h3 className='text-3xl font-bold'>{stat.value}</h3>
-                        <p className='text-lg text-center font-semibold'>{stat.title}</p>
+                        <h3 className='text-4xl font-extrabold text-mainColor'>{stat.value}</h3>
+                        <p className='text-xl text-center font-semibold'>{stat.title}</p>
                         <p className='text-muted-foreground text-center'>{stat.description}</p>
                     </div>
                 ))}

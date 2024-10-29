@@ -9,17 +9,17 @@ import React from "react";
 const ForPartnersPage = () => {
     return (
         <div className="flex flex-col gap-16 md:gap-20 ">
-            <div className="w-11/12 mx-auto flex flex-col mt-10  px-4 lg:px-0 gap-16 md:gap-20 " data-aos="fade-up">
+            <div className="w-11/12 mx-auto flex flex-col mt-10  px-4  gap-16 md:gap-20 " data-aos="fade-up">
                 <PartnerTopsection />
             </div>
             <div className="bg-gray-50" >
                 <PartnershipBenefits />
             </div>
             <Gallery />
-            <div className="bg-teal-50" data-aos="fade-up">
+            <div className="bg-gray-50" data-aos="fade-up">
                 <Excellence />
             </div>
-            <div className="w-11/12 mx-auto flex flex-col  px-4 lg:px-0 gap-16 md:gap-20" >
+            <div className="w-11/12 mx-auto flex flex-col  px-4  gap-16 md:gap-20" >
                 <PartnerTestimonial />
             </div>
             <UniversityShowCase />

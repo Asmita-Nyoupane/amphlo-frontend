@@ -6,8 +6,8 @@ import React from 'react'
 
 const FeaturePage = () => {
     return (
-        <div className='flex  flex-col gap-16 md:gap-20 px-4 lg:px-0 mt-10'>
-            <div className='flex w-11/12 mx-auto flex-col gap-16 md:gap-20 px-4 lg:px-0'>
+        <div className='flex  flex-col gap-16 md:gap-20  mt-10'>
+            <div className='flex w-11/12 mx-auto flex-col gap-16 md:gap-20 px-4 '>
 
                 <FeatureTopSection />
                 <KeyFeatures />
@@ -16,7 +16,7 @@ const FeaturePage = () => {
 
                 <Steps />
             </div>
-            <div className='flex w-11/12 mx-auto flex-col gap-16 md:gap-20 px-4  lg:px-0'>
+            <div className='flex w-11/12 mx-auto flex-col gap-16 md:gap-20 px-4  '>
 
                 <AmpholoFAQ />
             </div>

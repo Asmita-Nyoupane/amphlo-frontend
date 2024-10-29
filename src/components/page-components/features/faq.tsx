@@ -40,12 +40,12 @@ const AmpholoFAQ = () => {
         <div className='flex flex-col gap-6' data-aos="fade-up">
             <h2 className='text-4xl text-mainColor font-bold '>AMPHLO FAQs</h2>
 
-            <section className='w-11/12 mx-auto'>
+            <section className=''>
                 {amphloFaqs.map((faq) =>
                 (
                     <Accordion type="multiple" className="w-full" key={faq.question}>
                         <AccordionItem value="item-1">
-                            <AccordionTrigger className=' text-lg font-semibold'>{faq.question}</AccordionTrigger>
+                            <AccordionTrigger className=' text-lg  text-start'>{faq.question}</AccordionTrigger>
                             <AccordionContent className='text-base'>
                                 {faq.answer}
                             </AccordionContent>

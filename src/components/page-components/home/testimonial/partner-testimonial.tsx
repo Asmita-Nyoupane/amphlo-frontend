@@ -3,10 +3,10 @@ import React from 'react'
 import { testimonials } from './testimonial'
 import { Card, CardContent, CardDescription, CardFooter, CardHeader } from '@/components/ui/card'
 import Star from './star'
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from "react-slick";
+import Image from 'next/image'
 const PartnerTestimonial = () => {
     const testimonialLength = testimonials.length
     const settings = {
@@ -49,8 +49,8 @@ const PartnerTestimonial = () => {
         ],
     };
     return (
-        <div className='flex flex-col gap-10 ' data-aos="fade-up">
-            <div className='flex flex-col gap-2'>
+        <div className='flex flex-col gap-10 ' >
+            <div className='flex flex-col gap-2' >
 
                 <h2 className='text-4xl font-bold text-mainColor'>Partner Testimonials</h2>
                 <p className='font-medium'> {testimonialLength} Reviews</p>
@@ -74,10 +74,17 @@ const PartnerTestimonial = () => {
                                     </CardContent>
                                     <CardFooter>
                                         <div className="flex items-start space-x-4">
-                                            <Avatar className="size-12">
-                                                <AvatarImage className='object-cover object-top' src={testimonial.image} alt={testimonial.name} />
-                                                <AvatarFallback>{testimonial.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
-                                            </Avatar>
+                                            <div className='rounded-full'>
+                                                <Image
+                                                    src={testimonial.image}
+                                                    height={300}
+                                                    width={300}
+
+                                                    alt={testimonial.name}
+                                                    className="object-cover size-16 rounded-full object-top"
+                                                />
+
+                                            </div>
                                             <div className="space-y-1">
                                                 <h3 className="font-semibold">{testimonial.name}</h3>
                                                 <p className="text-sm text-muted-foreground">{testimonial.position}</p>
