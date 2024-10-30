@@ -2,6 +2,7 @@ import JoinAmphlo from '@/components/page-components/for-university/join-amphlo'
 import JourneyAndImpact from '@/components/page-components/for-university/journey-impact'
 import UniversityTopSection from '@/components/page-components/for-university/uni-top-section'
 import WhyAmphlo from '@/components/page-components/for-university/why-amphlo'
+import AmphloFeatures from '@/components/page-components/home/amphlo-differnciate'
 import React from 'react'
 
 const UniversityPage = () => {
@@ -16,6 +17,7 @@ const UniversityPage = () => {
                 <WhyAmphlo />
             </div>
             <JourneyAndImpact />
+            <AmphloFeatures />
             <JoinAmphlo />
         </div>
     )

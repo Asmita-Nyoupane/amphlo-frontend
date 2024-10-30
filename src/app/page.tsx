@@ -4,6 +4,7 @@ import ExploreDestination from "@/components/page-components/home/explore-destin
 import Features from "@/components/page-components/home/features/features";
 import HeroSection from "@/components/page-components/home/hero-section";
 import PartnerTestimonial from "@/components/page-components/home/testimonial/partner-testimonial";
+import TrasformJourney from "@/components/page-components/home/transform-journey";
 import WhyChoose from "@/components/page-components/home/why-choose";
 
 export default function Home() {
@@ -13,14 +14,17 @@ export default function Home() {
         <HeroSection />
         <Features />
         <WhyChoose />
-        <ExploreDestination />
       </div>
 
-      <div className="bg-gray-50">
+      <div className="w-11/12 mx-auto mt-10 flex flex-col gap-16 md:gap-20  px-6">
+        <ExploreDestination />
+      </div>
+      <div className=" bg-gradient-to-r from-[#a3d7da] to-[#66ff94]">
         <Excellence />
       </div>
-      <div className="w-11/12 mx-auto  md:px-0 flex flex-col gap-16 md:gap-20  px-10" >
+      <div className="w-11/12 mx-auto  flex flex-col gap-16 md:gap-20  px-6" >
         <AboutAmphlo />
+        <TrasformJourney />
         <PartnerTestimonial />
       </div>
     </div>

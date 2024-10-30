@@ -30,7 +30,7 @@ const TopHeader = () => {
 
     return (
         <header className="sticky top-0 left-0 right-0 z-50 bg-white shadow-md transition-colors duration-300 text-black">
-            <div className="hidden md:flex justify-between items-center w-11/12 mx-auto h-[4.3rem] px-2 py-2 lg:px-4">
+            <div className="hidden md:flex justify-between items-center w-11/12 mx-auto h-[4.3rem] px-2 py-2 ">
                 {/* Logo */}
                 <Link href={"/"} className="flex items-center py-4">
                     <Image

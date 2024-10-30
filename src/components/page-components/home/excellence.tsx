@@ -39,8 +39,8 @@ const Excellence = () => {
             <section className="relative w-full lg:w-[50%] h-64 mx-auto text-center grid grid-cols-2 gap-4">
                 {/* X and Y axis lines */}
                 <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                    <div className="w-full h-[0.5px] bg-slate-300 absolute top-1/2 transform -translate-y-1/2" /> {/* X-axis */}
-                    <div className="h-full w-[0.5px] bg-slate-300 absolute left-1/2 transform -translate-x-1/2" /> {/* Y-axis */}
+                    <div className="w-full h-[0.5px] bg-slate-400 absolute top-1/2 transform -translate-y-1/2" /> {/* X-axis */}
+                    <div className="h-full w-[0.5px] bg-slate-400 absolute left-1/2 transform -translate-x-1/2" /> {/* Y-axis */}
                 </div>
 
                 {/* Statistic items */}

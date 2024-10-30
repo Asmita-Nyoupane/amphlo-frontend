@@ -54,7 +54,7 @@ const ExploreDestination = () => {
                 {studyAbroadDestinations.map((destination, index) => (
                     <Card key={index} className="shadow-lg transition-transform transform hover:scale-105 relative  group">
                         <Image height={300}
-                            width={300} src={destination.image} alt={destination.title} className="w-full h-48 object-cover rounded-t-lg" />
+                            width={300} src={destination.image} alt={destination.title} className="w-full h-48 object-cover rounded-lg" />
 
                         <div className="absolute bg-blue-100/70 w-full py-2 text-mainColor text-xl text-center bottom-0 opacity-0 group-hover:opacity-100">{destination.title}</div>
 
