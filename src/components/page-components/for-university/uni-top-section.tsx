@@ -34,7 +34,7 @@ const UniversityTopSection = () => {
 
 
             {/* infinite scrolling */}
-            <div className="flex flex-wrap justify-center space-x-8 py-10">
+            <div className="flex flex-wrap justify-center space-x-8  px-4 py-10">
                 <div className="flex overflow-hidden space-x-16 group   mx-auto">
                     <div className="flex space-x-16 animate-loop-scroll  group-hover:paused">
                         {uniData.map((sponser, index) => (

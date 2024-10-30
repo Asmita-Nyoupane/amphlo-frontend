@@ -17,7 +17,7 @@ const Features = () => {
                 Discover how AMPHLO can enhance your abroad study management with advanced tools and customizable themes.
             </p>
 
-            <section className="flex gap-8 flex-wrap items-center justify-center">
+            <section className="flex gap-10 flex-wrap items-center  justify-center">
                 {featuresData?.map((feature) => (
                     <Card key={feature.title} className="w-[340px] trasition-all duration-300 ease-in-out transform hover:scale-105">
                         <CardHeader className="flex items-center gap-3 mb-4">
