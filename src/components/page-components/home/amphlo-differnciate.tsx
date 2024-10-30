@@ -34,7 +34,7 @@ export default function AmphloFeatures() {
 
     return (
         <section className="py-16 bg-gradient-to-br from-primary/5 to-secondary/5" data-aos="fade-up" >
-            <div className="container mx-auto px-4" >
+            <div className="w-11/12 mx-auto px-6" >
                 <h2 className="text-4xl font-bold  text-mainColor text-center mb-6">
                     What Makes Amphlo <span className="text-primary">Different</span>
                 </h2>

@@ -44,9 +44,9 @@ const AmpholoFAQ = () => {
                 {amphloFaqs.map((faq) =>
                 (
                     <Accordion type="multiple" className="w-full" key={faq.question}>
-                        <AccordionItem value="item-1">
-                            <AccordionTrigger className=' text-lg  text-start'>{faq.question}</AccordionTrigger>
-                            <AccordionContent className='text-base'>
+                        <AccordionItem value={faq.answer}>
+                            <AccordionTrigger className=' text-lg font-medium text-start'>{faq.question}</AccordionTrigger>
+                            <AccordionContent className='text-base text-gray-600'>
                                 {faq.answer}
                             </AccordionContent>
                         </AccordionItem>
