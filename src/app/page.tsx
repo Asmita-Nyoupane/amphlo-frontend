@@ -23,7 +23,7 @@ export default function Home() {
         <WhyChoose />
         <ExploreDestination />
       </div>
-      <div className=" bg-gradient-to-r from-[#a3d7da] to-[#66ff94]">
+      <div className="bg-gradient-to-r from-[#003235] to-[#66ff94]">
         <Excellence />
       </div>
       <div className="w-11/12 mx-auto  flex flex-col gap-16 md:gap-20  px-6" >

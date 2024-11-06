@@ -61,10 +61,10 @@ const TopHeader = () => {
                                             {link.name}
                                         </p>
                                     </DropdownMenuTrigger>
-                                    <DropdownMenuContent className="bg-white shadow-md">
+                                    <DropdownMenuContent className="bg-white shadow-md grid grid-cols-2 gap-4 p-4">
                                         {link.sublinks.map((sublink, j) => (
                                             <DropdownMenuItem asChild key={j}>
-                                                <Link href={sublink.link} className="text-gray-700 hover:text-mainColor px-4 py-2">
+                                                <Link href={sublink.link} className="text-gray-700 hover:font-medium  hover:text-mainColor px-4 py-2">
                                                     {sublink.name}
                                                 </Link>
                                             </DropdownMenuItem>

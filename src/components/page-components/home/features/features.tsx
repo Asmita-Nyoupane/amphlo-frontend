@@ -11,15 +11,15 @@ import Image from 'next/image';
 
 const Features = () => {
     return (
-        <div className="flex flex-col gap-8 items-center justify-center p-8 mt-16 lg:mt-0 " data-aos="fade-up">
-            <h2 className="text-4xl font-bold text-mainColor">Key Features of AMPHLO</h2>
+        <div className="flex flex-col gap-8 items-center justify-center  " data-aos="fade-up">
+            <h2 className="text-4xl font-bold text-mainColor text-center">Key Features of AMPHLO</h2>
             <p className="text-muted-foreground text-center max-w-lg">
                 Discover how AMPHLO can enhance your abroad study management with advanced tools and customizable themes.
             </p>
 
-            <section className="flex gap-10 flex-wrap items-center  justify-center">
+            <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 ">
                 {featuresData?.map((feature) => (
-                    <Card key={feature.title} className="w-[340px] trasition-all duration-300 ease-in-out transform hover:scale-105">
+                    <Card key={feature.title} className=" trasition-all duration-300 ease-in-out transform hover:scale-105">
                         <CardHeader className="flex items-center gap-3 mb-4">
 
                             <Image

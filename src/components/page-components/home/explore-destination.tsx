@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 
@@ -7,34 +8,42 @@ export const studyAbroadDestinations = [
     {
         image: "/assets/country/usa.jpeg",
         title: "United States",
+        slug: "united-states"
     },
     {
         image: "/assets/country/uk.jpeg",
         title: "United Kingdom",
+        slug: "united-kingdom"
     },
     {
         image: "/assets/country/australia.jpeg",
         title: "Australia",
+        slug: "australia"
     },
     {
-        image: "/assets/country/canda.jpeg",
+        image: "/assets/country/canada.jpeg",
         title: "Canada",
+        slug: "canada"
     },
     {
         image: "/assets/country/germany.jpeg",
         title: "Germany",
+        slug: "germany"
     },
     {
         image: "/assets/country/france.jpeg",
         title: "France",
+        slug: "france"
     },
     {
         image: "/assets/country/japan.jpeg",
         title: "Japan",
+        slug: "japan"
     },
     {
-        image: "/assets/country/netherland.jpeg",
+        image: "/assets/country/netherlands.jpeg",
         title: "Netherlands",
+        slug: "netherlands"
     },
 ];
 
@@ -52,13 +61,15 @@ const ExploreDestination = () => {
             </div>
             <div className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 {studyAbroadDestinations.map((destination, index) => (
-                    <Card key={index} className="shadow-lg transition-transform transform hover:scale-105 relative  group">
-                        <Image height={300}
-                            width={300} src={destination.image} alt={destination.title} className="w-full h-48 object-cover rounded-lg" />
+                    <Link key={index} href={`/destination/${destination.slug}`} passHref>
+                        <Card key={index} className="shadow-lg transition-transform transform hover:scale-105 relative  group">
+                            <Image height={300}
+                                width={300} src={destination.image} alt={destination.title} className="w-full h-48 object-cover rounded-lg" />
 
-                        <div className="absolute bg-blue-100/70 w-full py-2 text-mainColor text-xl text-center bottom-0 opacity-0 group-hover:opacity-100">{destination.title}</div>
+                            <div className="absolute bg-blue-100/70 w-full py-2 text-mainColor text-xl text-center bottom-0 opacity-0 group-hover:opacity-100">{destination.title}</div>
 
-                    </Card>
+                        </Card>
+                    </Link>
                 ))}
             </div>
         </div>

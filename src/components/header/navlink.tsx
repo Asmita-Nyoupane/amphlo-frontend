@@ -1,4 +1,9 @@
 import { Mail, MapPin, Phone } from "lucide-react";
+import { studyAbroadDestinations } from "../page-components/home/explore-destination";
+const countries = studyAbroadDestinations.map((destination) => ({
+    link: `/destination/${destination.slug}`,
+    name: destination.title,
+}))
 
 const navLinks = [
     { link: "/", name: "Home" },
@@ -12,21 +17,25 @@ const navLinks = [
     { link: "/features", name: "Features" },
     {
         link: "/countries", name: "Countries",
-        sublinks: [
-            { link: "/study-in-usa", name: "Study In USA" },
-            { link: "/study-in-australia", name: "Study In Australia" },
-        ]
-    },
+        sublinks: countries
+    }
+
 ];
-const footerLink = [
+const sideLink = [
+
     { link: "/", name: "Home" },
-    // { link: "/about", name: "About Us" },
     { link: "/features", name: "Features" },
-    { link: "/study-in-usa", name: "Study In USA" },
-    { link: "/study-in-australia", name: "Study In Australia" },
     { link: "/for-universities", name: "For Universities" },
     { link: "/for-partners", name: "For Partners " },
+    ...countries
+
 ]
+const footerLink = [
+    { link: "/", name: "Home" },
+    { link: "/features", name: "Features" },
+    { link: "/for-universities", name: "For Universities" },
+    { link: "/for-partners", name: "For Partners " },]
+
 const contacts = [
     {
         icon: Phone,
@@ -59,4 +68,4 @@ const socialMedia = [
         link: "https://www.x.com",
     },
 ];
-export { navLinks, footerLink, contacts, socialMedia }
+export { navLinks, footerLink, contacts, sideLink, socialMedia, countries }

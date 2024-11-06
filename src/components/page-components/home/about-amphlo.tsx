@@ -25,15 +25,15 @@ const whyChooseAmphlo = [
 const AboutAmphlo = () => {
     return (
         <div className="flex flex-col-reverse lg:flex-row   items-center justify-between gap-12 " data-aos="fade-up" >
-            <section className="w-full lg:w-[50%] ">
+            <section className="w-full lg:w-[50%]  flex-1">
                 <Image
                     src={"/assets/about.jpg"}
                     alt="hero-image"
-                    height={500}
-                    width={500}
+                    height={800}
+                    width={800}
                     quality={100}
                     priority={true}
-                    className="object-cover w-full   aspect-video lg:aspect-square rounded-xl shadow-lg transition-transform duration-300 hover:scale-105"
+                    className="object-cover w-full   h-auto flex-grow   aspect-video lg:aspect-square rounded-xl shadow-lg transition-transform duration-300 hover:scale-105"
                 />
             </section>
             <section className="  flex flex-col gap-5 flex-1 w-full">

@@ -17,7 +17,7 @@ const ForPartnersPage = () => {
                 <PartnershipBenefits />
             </div>
             <Gallery />
-            <div className="bg-gradient-to-r from-[#7fe7ec] to-[#66ff94]" data-aos="fade-up">
+            <div className="bg-gradient-to-r from-[#003235] to-[#66ff94]" data-aos="fade-up">
                 <Excellence />
             </div>
             <UniversityShowCase />

@@ -119,3 +119,13 @@ body {
     border-color: currentColor;
   }
 }
+
+/* scroll bar hide */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

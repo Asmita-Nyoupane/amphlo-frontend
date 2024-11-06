@@ -14,7 +14,7 @@ const UniversityShowCase = () => {
             {/* University Logos Section */}
             <section className="flex flex-wrap gap-8 items-center justify-center  w-full">
                 {uniData.map((uni, index) => (
-                    <div key={index} className="flex items-center justify-center">
+                    <div key={index} className="flex items-center justify-center ">
                         <Image
                             src={uni.image}
                             alt={`${uni.name} logo`}

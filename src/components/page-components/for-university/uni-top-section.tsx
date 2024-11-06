@@ -12,6 +12,10 @@ export const uniData = [
     { name: "Global Universit1y", image: "/assets/uni-3.png" },
     { name: "TopTech Institute1", image: "/assets/uni-4.png" },
     { name: "EduWorld College1", image: "/assets/uni-5.png" },
+    { name: "University XYZ22", image: "/assets/uni-2.png" },
+    { name: "Global Univers2it1y", image: "/assets/uni-3.png" },
+    { name: "TopTech Insti2tute1", image: "/assets/uni-4.png" },
+    { name: "EduWorld Col2lege1", image: "/assets/uni-5.png" },
 ];
 
 const UniversityTopSection = () => {

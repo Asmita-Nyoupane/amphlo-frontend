@@ -28,13 +28,13 @@ const features = [
 const WhyChoose = () => {
     return (
         <div className='flex flex-col lg:flex-row gap-14 justify-between lg:px-4' data-aos="fade-up">
-            <section className='w-full lg:w-[50%] '>
+            <section className='w-full lg:w-[50%]  '>
                 <Image
                     src={'/assets/choose.jpeg'}
                     alt='choose-image'
                     height={700}
                     width={700}
-                    className='object-cover aspect-square rounded-xl shadow-lg flex-grow' />
+                    className='object-cover  w-full aspect-video lg:aspect-square rounded-xl shadow-lg flex-grow' />
             </section>
             <section className='flex-1'>
                 <div className=' flex flex-col gap-5'>

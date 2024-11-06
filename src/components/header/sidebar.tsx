@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
-import { footerLink } from "./navlink";
+import { sideLink } from "./navlink";
 import { LinkItem } from "./top-header";
 import { Button } from "../ui/button";
 
@@ -66,7 +66,7 @@ const SideHeader = () => {
 
                 {/* Navigation Links */}
                 <nav className="w-full flex flex-col gap-3 mt-3">
-                    {footerLink.map((link: LinkItem, i) => (
+                    {sideLink.map((link: LinkItem, i) => (
                         <Link
                             key={i}
                             href={link.link}

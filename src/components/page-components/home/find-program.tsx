@@ -6,8 +6,9 @@ import React from 'react';
 const FindProgram = () => {
     return (
         <div className="flex flex-col lg:flex-row items-center gap-14 lg:gap-8 justify-between w-full px-10 py-20  text-white" data-aos="fade-up">
-            <section className="flex flex-col items-start gap-6 lg:w-[56%] w-full px-8 py-14  ">
-                <h2 className="text-4xl lg:text-6xl font-extrabold tracking-tight leading-9">
+            <section className="flex flex-col items-start gap-6 lg:w-[56%] w-full px-8 py-14   ">
+                {/* custom tailwind property leading didn't work so we have to use inline css */}
+                <h2 className="text-4xl lg:text-6xl font-extrabold tracking-wide" style={{ lineHeight: '5rem' }}>
                     Explore Top Programs with AMPHLO
                 </h2>
                 <p className="text-lg lg:text-xl font-medium">

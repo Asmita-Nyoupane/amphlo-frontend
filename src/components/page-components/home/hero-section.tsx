@@ -7,14 +7,14 @@ import React from 'react'
 const HeroSection = () => {
     return (
 
-        <div className='flex flex-col lg:flex-row gap-10 justify-between items-center   h-[calc(100vh-6.8rem)]  '>
+        <div className='flex flex-col lg:flex-row gap-16 justify-between items-center   h-[calc(100vh-6.8rem)] '>
 
             <section className=' w-full lg:w-[50%] flex flex-col gap-5  '>
-                <h2 className={`typingHeading font-bold text-7xl md:font-extrabold  flex flex-wrap text-mainColor tracking-wide`}>
+                <h2 className={`typingHeading font-bold  text-4xl md:text-7xl md:font-extrabold  flex flex-wrap text-transparent  bg-clip-text  bg-gradient-to-r from-[#003235] to-[#66ff94] tracking-wide`}>
                     <span className='mb-4'>Welcome to
                     </span>
 
-                    <span className='text-cyan-800 '>
+                    <span className='ml-2' >
                         Amphlo
                     </span>
                 </h2>
@@ -40,7 +40,7 @@ const HeroSection = () => {
                     alt='hero-image'
                     height={300}
                     width={300}
-                    className='object-cover aspect-video  w-full lg:aspect-square rounded-xl shadow-lg' />
+                    className='object-cover aspect-video   w-full lg:w-11/12  lg:aspect-square rounded-xl shadow-lg' />
             </section>
 
         </div>
