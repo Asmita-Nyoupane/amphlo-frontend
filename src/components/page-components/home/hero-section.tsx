@@ -5,6 +5,7 @@ import Link from 'next/link'
 import React from 'react'
 
 const HeroSection = () => {
+
     return (
 
         <div className='flex flex-col lg:flex-row gap-16 justify-between items-center   h-[calc(100vh-6.8rem)] '>

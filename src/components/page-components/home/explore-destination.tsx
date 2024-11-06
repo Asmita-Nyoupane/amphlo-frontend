@@ -21,7 +21,7 @@ export const studyAbroadDestinations = [
         slug: "australia"
     },
     {
-        image: "/assets/country/canada.jpeg",
+        image: '/assets/country/canda.jpeg',
         title: "Canada",
         slug: "canada"
     },
@@ -41,7 +41,7 @@ export const studyAbroadDestinations = [
         slug: "japan"
     },
     {
-        image: "/assets/country/netherlands.jpeg",
+        image: "/assets/country/netherland.jpeg",
         title: "Netherlands",
         slug: "netherlands"
     },

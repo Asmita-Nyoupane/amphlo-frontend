@@ -18,7 +18,7 @@ const USATopSection = ({ country }: {
             <section className=' w-full   lg:w-[50%] flex flex-col gap-5 justify-start '>
 
                 <h2 className='text-3xl font-bold text-mainColor tracking-wide  md:text-4xl   max-w-xl'>
-                    {`Explore Your Future with Amphlo: Your Path to Studying Abroad in ${country?.title}`}
+                    {`Explore Your Future with Amphlo : Your Path to Studying Abroad in ${country?.title}`}
                 </h2>
                 <p className=' text-muted-foreground leading-8 lg:max-w-2xl'>
                     {`Dreaming of studying in ${country?.title}? With its world-renowned universities, diverse cultural experiences, and opportunities for global networking,  ${country?.title} offers students an enriching environment to learn and grow. At Amphlo, our CRM platform simplifies the study abroad process, providing a seamless experience to ensure you can focus on what truly matters: your education and personal journey.`}

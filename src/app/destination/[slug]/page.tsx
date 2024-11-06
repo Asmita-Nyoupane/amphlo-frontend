@@ -11,6 +11,7 @@ const CountryDetail = () => {
 
     const { slug } = useParams()
     const country = studyAbroadDestinations.find(dest => dest.slug === slug);
+    console.log("🚀 ~ CountryDetail ~ country:", country)
 
     if (!country) {
         return <div className='text-xl flex justify-center items-center h-[50vh] font-semibold text-muted-foreground'>Country not found</div>;

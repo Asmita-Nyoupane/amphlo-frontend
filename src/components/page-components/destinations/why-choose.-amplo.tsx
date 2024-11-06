@@ -36,7 +36,7 @@ const WhyChooseAmphlo = () => {
             <h2 className="text-4xl font-bold text-center text-mainColor ">Why Choose Amphlo?</h2>
             <section className="grid gird-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 items-center justify-center">
                 {studyAbroadBenefits?.map((feature) => (
-                    <Card key={feature.title} className="h-[480px]   overflow-hidden trasition-all duration-300 ease-in-out transform hover:scale-105">
+                    <Card key={feature.title} className="h-[460px]   overflow-hidden trasition-all duration-300 ease-in-out transform hover:scale-105">
                         <CardHeader className="flex items-center gap-3 mb-4">
 
                             <Image

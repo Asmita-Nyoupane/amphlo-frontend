@@ -24,17 +24,17 @@ const whyChooseAmphlo = [
 
 const AboutAmphlo = () => {
     return (
-        <div className="flex flex-col-reverse lg:flex-row   items-center justify-between gap-12 " data-aos="fade-up" >
-            <section className="w-full lg:w-[50%]  flex-1">
-                <Image
-                    src={"/assets/about.jpg"}
-                    alt="hero-image"
-                    height={800}
-                    width={800}
-                    quality={100}
-                    priority={true}
-                    className="object-cover w-full   h-auto flex-grow   aspect-video lg:aspect-square rounded-xl shadow-lg transition-transform duration-300 hover:scale-105"
-                />
+        <div className="flex flex-col-reverse lg:flex-row    justify-between gap-12 " data-aos="fade-up" >
+            <section className="w-full lg:w-[50%]">
+                <div className='relative w-full  min-h-[400px]   h-auto xl:h-full rounded-lg overflow-hidden'>
+                    <Image
+                        src={"/assets/about.jpg"}
+                        alt='cover image'
+                        layout="fill"
+                        objectFit="cover"
+                        className='rounded-lg object-cover h-full w-full'
+                    />
+                </div>
             </section>
             <section className="  flex flex-col gap-5 flex-1 w-full">
                 <div className="flex flex-col gap-2">
