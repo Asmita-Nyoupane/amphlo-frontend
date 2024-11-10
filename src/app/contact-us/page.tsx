@@ -1,6 +1,9 @@
 
+import { ContactForm } from "@/components/page-components/contact-us/connect-partner-form";
 import ContactTopSection from "@/components/page-components/contact-us/contact-top-section";
 import MapSection from "@/components/page-components/contact-us/map-section";
+import { Card } from "@/components/ui/card";
+import Image from "next/image";
 
 export default function ContactPage() {
     return (
@@ -11,10 +14,21 @@ export default function ContactPage() {
                     We&apos;re here to help streamline your study abroad process
                 </p>
             </div>
+            <section className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                <Card className=" py-10 px-6">
 
-            <ContactTopSection />
-            <MapSection />
-
+                    <ContactForm />
+                </Card>
+                <div className='relative w-full  min-h-[500px]   h-auto xl:h-full rounded-lg overflow-hidden'>
+                    <Image
+                        src={"/assets/contact.png"}
+                        alt='cover image'
+                        layout="fill"
+                        objectFit="cover"
+                        className='rounded-lg object-cover h-full w-full'
+                    />
+                </div>
+            </section>
         </div>
     );
 }

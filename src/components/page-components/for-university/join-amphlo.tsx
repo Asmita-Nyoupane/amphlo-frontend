@@ -1,7 +1,7 @@
 
 import Image from 'next/image';
 import React from 'react';
-import { ContactForm } from './connect-partner-form';
+import { ContactForm } from '../contact-us/connect-partner-form';
 
 const JoinAmphlo = () => {
     return (
@@ -12,7 +12,7 @@ const JoinAmphlo = () => {
                     Our platform fosters a growing network of universities, counselors, and students, all working towards a shared goal of simplifying and enhancing the global study experience. Connect with us to discover how Amphlo can help your institution stand out in the competitive landscape of international education.
                 </p>
             </div>
-            <div className=' flex flex-col lg:flex-row  gap-10 justify-between items-center '>
+            <div className=' flex flex-col lg:flex-row  gap-10 justify-between  '>
 
                 <section className=' w-full lg:w-[50%] border rounded shadow p-6'>
                     <ContactForm />
@@ -20,13 +20,17 @@ const JoinAmphlo = () => {
                 {/* Text Section */}
                 <section className='flex-1 w-full '>
 
-                    <Image
-                        src={'/assets/leaverage.jpeg'}
-                        alt='university-image'
-                        height={300}
-                        width={300}
-                        className='object-cover  aspect-videolg:aspect-square rounded-xl shadow-lg w-full' />
 
+
+                    <div className='relative w-full  min-h-[500px]   h-auto xl:h-full rounded-lg overflow-hidden'>
+                        <Image
+                            src={'/assets/leaverage.jpeg'}
+                            alt='cover image'
+                            layout="fill"
+                            objectFit="cover"
+                            className='rounded-lg object-cover h-full w-full'
+                        />
+                    </div>
                 </section>
             </div>
 

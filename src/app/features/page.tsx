@@ -8,7 +8,7 @@ import React from 'react'
 
 const FeaturePage = () => {
     return (
-        <div className='flex  flex-col gap-16md:gap-24  mt-10'>
+        <div className='flex  flex-col gap-16 md:gap-24  mt-10'>
             <div className='flex w-11/12 mx-auto flex-col gap-16 md:gap-24 px-4 '>
 
                 <FeatureTopSection />
@@ -18,7 +18,7 @@ const FeaturePage = () => {
 
                 <Steps />
             </div>
-            <div className='flex w-11/12 mx-auto flex-col gap-16 md:gap-24 px-4  '>
+            <div className='flex mt-16 md:mt-20 w-11/12 mx-auto flex-col gap-16 md:gap-24 px-4  '>
                 <Vision />
                 <Mission />
                 <AmpholoFAQ />

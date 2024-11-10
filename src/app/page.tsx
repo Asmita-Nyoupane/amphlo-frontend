@@ -11,7 +11,7 @@ import WhyChoose from "@/components/page-components/home/why-choose";
 export default function Home() {
   return (
     <div className=" flex flex-col   gap-16 md:gap-24">
-      <div className="w-11/12 mx-auto mt-10 flex flex-col gap-16md:gap-24  px-6">
+      <div className="w-11/12 mx-auto mt-10 flex flex-col gap-16 md:gap-24  px-6">
         <HeroSection />
         <Features />
       </div>
@@ -19,14 +19,14 @@ export default function Home() {
         <FindProgram />
       </div>
 
-      <div className="w-11/12 mx-auto mt-10 flex flex-col gap-16md:gap-24  px-6">
+      <div className="w-11/12 mx-auto mt-10 flex flex-col gap-16 md:gap-24  px-6">
         <WhyChoose />
         <ExploreDestination />
       </div>
       <div className="bg-gradient-to-r from-[#003235] to-[#66ff94]">
         <Excellence />
       </div>
-      <div className="w-11/12 mx-auto  flex flex-col gap-16md:gap-24  px-6" >
+      <div className="w-11/12 mx-auto  flex flex-col gap-16 md:gap-24  px-6" >
         <AboutAmphlo />
         <TrasformJourney />
         <PartnerTestimonial />

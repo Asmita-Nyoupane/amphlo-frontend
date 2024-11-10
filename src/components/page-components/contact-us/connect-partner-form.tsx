@@ -2,7 +2,6 @@
 
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
-import { z } from "zod";
 import { Button } from "@/components/ui/button";
 import {
     Form,
@@ -15,37 +14,35 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { ArrowRight } from "lucide-react";
+import { ContactFormSchema, formSchema } from "./contact-schema";
 
-const formSchema = z.object({
-    name: z.string().min(1, { message: "Name is required." }),
-    email: z.string().email({ message: "Please enter a valid email address." }),
-    message: z
-        .string()
-        .min(10, { message: "Message should be at least 10 characters." }),
-});
 
 export function ContactForm() {
-    const form = useForm<z.infer<typeof formSchema>>({
+    const form = useForm<ContactFormSchema>({
         resolver: zodResolver(formSchema),
         defaultValues: {
             name: "",
             email: "",
-            message: "",
+            phone: "",
+            country: "",
+            purpose: "",
+            representedAgency: "",
+
         },
     });
 
-    async function onSubmit(values: z.infer<typeof formSchema>) {
+    async function onSubmit(values: ContactFormSchema) {
         console.log("🚀 ~ onSubmit ~ values:", values);
     }
 
     return (
-        <Form {...form} >
+        <Form {...form}>
             <h2 className="text-center text-2xl font-semibold pb-10">
                 Connect With Us
             </h2>
             <form
                 onSubmit={form.handleSubmit(onSubmit)}
-                className="space-y-6 -mt-10 "
+                className="space-y-6 -mt-10"
             >
                 <FormField
                     control={form.control}
@@ -79,14 +76,54 @@ export function ContactForm() {
                 />
                 <FormField
                     control={form.control}
-                    name="message"
+                    name="phone"
                     render={({ field }) => (
                         <FormItem>
-                            <FormLabel>Your Message</FormLabel>
+                            <FormLabel>Phone</FormLabel>
+                            <FormControl>
+                                <Input type="tel" placeholder="Enter your phone number" {...field} />
+                            </FormControl>
+                            <FormMessage />
+                        </FormItem>
+                    )}
+                />
+                <FormField
+                    control={form.control}
+                    name="country"
+                    render={({ field }) => (
+                        <FormItem>
+                            <FormLabel>Country</FormLabel>
+                            <FormControl>
+                                <Input type="text" placeholder="Enter your country" {...field} />
+                            </FormControl>
+                            <FormMessage />
+                        </FormItem>
+                    )}
+                />
+
+                <FormField
+                    control={form.control}
+                    name="representedAgency"
+                    render={({ field }) => (
+                        <FormItem>
+                            <FormLabel>Represented Agency (Optional)</FormLabel>
+                            <FormControl>
+                                <Input type="text" placeholder="Enter represented agency" {...field} />
+                            </FormControl>
+                            <FormMessage />
+                        </FormItem>
+                    )}
+                />
+                <FormField
+                    control={form.control}
+                    name="purpose"
+                    render={({ field }) => (
+                        <FormItem>
+                            <FormLabel>Your Purpose</FormLabel>
                             <FormControl>
                                 <Textarea
-                                    placeholder="Type your message here..."
-                                    id="message"
+                                    placeholder="Write your purpose..."
+                                    id="purpose"
                                     rows={5}
                                     style={{ resize: "none" }}
                                     {...field}

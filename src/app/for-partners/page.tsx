@@ -9,8 +9,8 @@ import React from "react";
 
 const ForPartnersPage = () => {
     return (
-        <div className="flex flex-col gap-16md:gap-24 ">
-            <div className="w-11/12 mx-auto flex flex-col mt-10  px-4  gap-16md:gap-24 " data-aos="fade-up">
+        <div className="flex flex-col gap-16 md:gap-24 ">
+            <div className="w-11/12 mx-auto flex flex-col mt-10  px-4  gap-16 md:gap-24 " data-aos="fade-up">
                 <PartnerTopsection />
             </div>
             <div className="bg-gray-50" >
@@ -21,7 +21,7 @@ const ForPartnersPage = () => {
                 <Excellence />
             </div>
             <UniversityShowCase />
-            <div className="w-11/12 mx-auto flex flex-col  px-4  gap-16md:gap-24" >
+            <div className="w-11/12 mx-auto flex flex-col  px-4  gap-16 md:gap-24" >
                 <PartnerTestimonial />
             </div>
             <AmphloFeatures />

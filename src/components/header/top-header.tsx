@@ -1,5 +1,3 @@
-
-
 "use client";
 import Image from "next/image";
 import Link from "next/link";
@@ -11,9 +9,8 @@ import {
     DropdownMenuContent,
     DropdownMenuItem,
     DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
+} from "@/components/ui/dropdown-menu";
 import { ArrowRight } from "lucide-react";
-
 
 export type LinkItem = {
     name: string;
@@ -21,11 +18,10 @@ export type LinkItem = {
     sublinks?: {
         name: string;
         link: string;
-    }[]
+    }[];
 };
 
 const TopHeader = () => {
-
     const path = usePathname();
 
     return (
@@ -35,7 +31,6 @@ const TopHeader = () => {
                 <Link href={"/"} className="flex items-center py-4">
                     <Image
                         src={"/assets/logo.png"}
-
                         alt="Ampholo logo"
                         height={300}
                         width={300}
@@ -43,55 +38,59 @@ const TopHeader = () => {
                         priority
                         className="h-[80px] w-auto object-contain hover:scale-110 transition-transform duration-300 ease-in-out"
                     />
-
                 </Link>
 
                 {/* Navigation Links */}
                 <nav className="flex items-center justify-end gap-8">
-                    {navLinks.map((link: LinkItem, i) => (
-                        <div key={i}>
-                            {link.sublinks ? (
-                                <DropdownMenu>
-                                    <DropdownMenuTrigger asChild className="outline-none cursor-pointer focus:ring-0">
-                                        <p
+                    {navLinks.map((link: LinkItem, i) => {
+                        // Check if the path matches the main link or any of its sublinks
+                        const isActive = path === link.link || link.sublinks?.some((sublink) => path === sublink.link);
 
-                                            className={`font-medium lg:text-md transition-all duration-300 ease-in-out transform hover:scale-110 ${path === link.link ? "text-mainColor font-semibold" : "hover:text-mainColor"
-                                                }`}
-                                        >
-                                            {link.name}
-                                        </p>
-                                    </DropdownMenuTrigger>
-                                    <DropdownMenuContent className="bg-white shadow-md   flex flex-col gap-2 p-2">
-                                        {link.sublinks.map((sublink, j) => (
-                                            <DropdownMenuItem asChild key={j}>
-                                                <Link href={sublink.link} className="text-gray-700 hover:font-medium  hover:text-mainColor hover:bg-mainColor/10 px-4 py-2">
-                                                    {sublink.name}
-                                                </Link>
-                                            </DropdownMenuItem>
-                                        ))}
-                                    </DropdownMenuContent>
-                                </DropdownMenu>
-                            ) : (
-                                <Link
-                                    href={link.link}
-                                    className={`font-medium  transition-all duration-300 ease-in-out transform hover:scale-110 ${path === link.link ? "  text-mainColor   font-semibold" : "hover:text-mainColor "
-                                        }`}
-                                >
-                                    {link.name}
-                                </Link>
-                            )}
-                        </div>
-                    ))}
+                        return (
+                            <div key={i}>
+                                {link.sublinks ? (
+                                    <DropdownMenu>
+                                        <DropdownMenuTrigger asChild className="outline-none cursor-pointer focus:ring-0">
+                                            <p
+                                                className={`font-medium lg:text-md transition-all duration-300 ease-in-out transform hover:scale-110 ${isActive ? "text-mainColor font-semibold" : "hover:text-mainColor"
+                                                    }`}
+                                            >
+                                                {link.name}
+                                            </p>
+                                        </DropdownMenuTrigger>
+                                        <DropdownMenuContent className="bg-white shadow-md flex flex-col gap-2 p-2">
+                                            {link.sublinks.map((sublink, j) => (
+                                                <DropdownMenuItem asChild key={j}>
+                                                    <Link
+                                                        href={sublink.link}
+                                                        className="text-gray-700 hover:font-medium hover:text-mainColor hover:bg-mainColor/10 px-4 py-2"
+                                                    >
+                                                        {sublink.name}
+                                                    </Link>
+                                                </DropdownMenuItem>
+                                            ))}
+                                        </DropdownMenuContent>
+                                    </DropdownMenu>
+                                ) : (
+                                    <Link
+                                        href={link.link}
+                                        className={`font-medium transition-all duration-300 ease-in-out transform hover:scale-110 ${isActive ? "text-mainColor font-semibold" : "hover:text-mainColor"
+                                            }`}
+                                    >
+                                        {link.name}
+                                    </Link>
+                                )}
+                            </div>
+                        );
+                    })}
                 </nav>
 
-
                 <div className="flex gap-4 items-center">
-
-                    <Button className="rounded-full" variant={'ghost'} size={'lg'} asChild>
+                    {/* <Button className="rounded-full" variant={'ghost'} size={'lg'} asChild>
                         <Link href='/' >
                             Join Us
                         </Link>
-                    </Button>
+                    </Button> */}
                     <Button variant="outline" size="lg" className="rounded-full group" asChild>
                         <Link href="/contact-us" className="flex items-center">
                             Contact Us

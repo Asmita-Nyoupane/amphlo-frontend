@@ -29,12 +29,21 @@ const WhyChoose = () => {
     return (
         <div className='flex flex-col lg:flex-row gap-14 justify-between lg:px-4' data-aos="fade-up">
             <section className='w-full lg:w-[50%]  '>
-                <Image
-                    src={'/assets/choose.jpeg'}
+                {/* <Image
+                    src={'/choose.png'}
                     alt='choose-image'
                     height={700}
                     width={700}
-                    className='object-cover  w-full aspect-video lg:aspect-square rounded-xl shadow-lg flex-grow' />
+                    className='object-cover  w-full aspect-video lg:aspect-square rounded-xl shadow-lg flex-grow' /> */}
+                <div className='relative w-full bg-green-100  min-h-[400px]   h-auto xl:h-full rounded-lg overflow-hidden'>
+                    <Image
+                        src={'/choose.png'}
+                        alt='choose-image'
+                        layout="fill"
+                        objectFit="cover"
+                        className='rounded-lg object-cover h-full w-full'
+                    />
+                </div>
             </section>
             <section className='flex-1'>
                 <div className=' flex flex-col gap-5'>
