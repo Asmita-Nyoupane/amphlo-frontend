@@ -45,11 +45,6 @@ const contacts = [
         icon: Mail,
         info: "info@amphlo.com",
     },
-
-    {
-        icon: MapPin,
-        info: "Yogikoti, Rupandehi",
-    },
 ];
 const socialMedia = [
     {

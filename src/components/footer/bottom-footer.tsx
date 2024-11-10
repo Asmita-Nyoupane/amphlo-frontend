@@ -22,11 +22,11 @@ const BottomFooter = () => {
             </p>
             {/* Terms and Privacy */}
             <div className='flex flex-wrap items-center gap-4 md:gap-8 cursor-pointer mb-4 md:mb-0 '>
-                <Link href="/terms" className="hover:text-primaryColor transition-colors duration-200">
+                <Link href="#" className="hover:text-primaryColor transition-colors duration-200">
                     Terms & Conditions
                 </Link>
 
-                <Link href="/privacy" className="hover:text-primaryColor  transition-colors duration-200">
+                <Link href="#" className="hover:text-primaryColor  transition-colors duration-200">
                     Privacy Policy
                 </Link>
             </div>
